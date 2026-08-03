@@ -68,11 +68,27 @@ ai-pd-2026-27/
 │   ├── privacy.html
 │   ├── resources.html            # Frameworks, deep dives
 │   └── chatbot-repo.html         # Optional private chatbot
-├── downloads/                    # Editable policy templates (.md)
-│   ├── policy-*.md               # Per-department policies
-│   └── classroom-agreement.md
+├── downloads/                    # Editable policy templates (.docx, Google-Docs-ready)
+│   ├── policy-*.docx             # Per-department policies
+│   └── classroom-agreement.docx
+├── scripts/
+│   └── md_to_docx.py             # Rebuilds the .docx templates from the .md sources
 └── RESEARCH-NOTES.md             # Maintainer's verified research
 ```
+
+### Updating the policy templates
+
+The source of truth is the `.md` files that live alongside each `.docx` in `downloads/` (kept so
+content is easy to edit). To regenerate the Word files after editing the markdown:
+
+```bash
+python3 -m pip install python-docx   # once
+python3 scripts/md_to_docx.py
+```
+
+The `.docx` templates are designed to be **uploaded to Google Drive** (they open as Google Docs on
+Chromebooks). To make them live links: upload each `.docx` to Drive → open as Google Docs → set
+sharing → replace the link on the [Policies page](pages/policies.html) with the Drive share URL.
 
 ## License
 
