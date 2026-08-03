@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Toolbox — Compare the Tools | AI in Education</title>
+  <meta name="description" content="Side-by-side comparison of AI tools for teachers: Gemini, Claude, ChatGPT, Ollama, and education tools. What each does, what it's good for, its limits, and student privacy stance.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">AI</span>
+        <span class="brand-text">AI in Education<span>Professional Learning Hub</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="pd-overview.html">The 3 PD Sessions</a>
+        <a href="tools.html" class="active">AI Toolbox</a>
+        <a href="plans.html">Free vs Paid Plans</a>
+        <a href="policies.html">Policies &amp; Templates</a>
+        <a href="department-activities.html">Department Activities</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="pd-hero">
+    <div class="container">
+      <span class="pd-number">AI TOOLBOX</span>
+      <h1>Compare the AI tools</h1>
+      <p class="lede">
+        A plain-language guide to the tools we talk about in PD — what each one does, what it's good at,
+        where it falls short, and how to treat student data around it. Prices change often; always verify
+        on the official site.
+      </p>
+      <div class="pd-meta">
+        <span class="meta-pill">🧰 4 categories</span>
+        <span class="meta-pill">🔒 Privacy-stance tags</span>
+        <span class="meta-pill">💰 Free / paid</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <div class="legend">
+      <span><span class="tag tag-priv-safe">Safe</span> approved for student data</span>
+      <span><span class="tag tag-priv-caution">Caution</span> ok for teachers, not student PII</span>
+      <span><span class="tag tag-priv-risk">Risk</span> do not put student data</span>
+      <span><span class="tag tag-free">Free</span></span>
+      <span><span class="tag tag-paid">Paid</span></span>
+      <span><span class="tag tag-freemium">Freemium</span></span>
+    </div>
+
+    <!-- ============ CONSUMER CHATBOTS ============ -->
+    <section id="chatbots">
+      <p class="eyebrow">Category 1 · All-purpose assistants</p>
+      <h2>The big three chatbots + a local option</h2>
+      <p class="lead mb-3">
+        These general assistants do a little of everything. Use them for planning, writing, brainstorming,
+        and questions. They're the most flexible tools in the box.
+      </p>
+
+      <div class="grid grid-2">
+
+        <div class="card tool-card" id="gemini">
+          <div class="tool-name">Gemini <span class="tag tag-freemium">Free + paid</span></div>
+          <p class="tool-desc">Google's all-purpose assistant. Deeply connected to Google Workspace (Docs, Gmail, Slides).</p>
+          <span class="row-label">Good for</span>
+          <ul>
+            <li>Drafting docs, emails, slides inside Google</li>
+            <li>Summarizing and searching your Google Drive</li>
+            <li>Brainstorming and quick research</li>
+          </ul>
+          <span class="row-label">Not great for</span>
+          <ul>
+            <li>Long, nuanced analytical writing (Claude often wins)</li>
+            <li>Being fully private — consumer free tier may use your chats</li>
+          </ul>
+          <span class="row-label">Student data</span>
+          <p class="small mt-1"><span class="tag tag-priv-caution">Caution</span> Teacher use without student PII is fine. For student data, only use a school/district Workspace-for-Education setup that's approved.</p>
+          <span class="row-label">Cost</span>
+          <p class="small mt-1">Free tier; Google AI Plus ~$10/mo, Pro ~$20/mo. See <a href="plans.html">Plans</a>.</p>
+        </div>
+
+        <div class="card tool-card" id="claude">
+          <div class="tool-name">Claude <span class="tag tag-freemium">Free + paid</span></div>
+          <p class="tool-desc">Anthropic's assistant. Widely praised for thoughtful writing, analysis, and long documents.</p>
+          <span class="row-label">Good for</span>
+          <ul>
+            <li>Drafting and editing nuanced prose</li>
+            <li>Analyzing long documents and PDFs</li>
+            <li>Careful, well-structured lesson planning</li>
+          </ul>
+          <span class="row-label">Not great for</span>
+          <ul>
+            <li>Native Google Workspace integration (Gemini wins there)</li>
+            <li>Free tier has usage limits; gets slower during peak</li>
+          </ul>
+          <span class="row-label">Student data</span>
+          <p class="small mt-1"><span class="tag tag-priv-caution">Caution</span> Fine for teacher use without student PII. Anthropic offers education/institutional plans — use an approved school account for student data.</p>
+          <span class="row-label">Cost</span>
+          <p class="small mt-1">Free tier; Team from ~$20/seat/mo. See <a href="plans.html">Plans</a>.</p>
+        </div>
+
+        <div class="card tool-card" id="chatgpt">
+          <div class="tool-name">ChatGPT <span class="tag tag-freemium">Free + paid</span></div>
+          <p class="tool-desc">OpenAI's assistant. The most widely known; strong at conversation, code, and general tasks.</p>
+          <span class="row-label">Good for</span>
+          <ul>
+            <li>General questions and quick drafting</li>
+            <li>Coding and problem-solving help</li>
+            <li>Generating ideas and practice material</li>
+          </ul>
+          <span class="row-label">Not great for</span>
+          <ul>
+            <li>Very long, complex documents (can lose the thread)</li>
+            <li>Being private on the free tier</li>
+          </ul>
+          <span class="row-label">Student data</span>
+          <p class="small mt-1"><span class="tag tag-priv-caution">Caution</span> Teacher use without student PII is fine. For student data, use ChatGPT for Education / an approved school account — never a personal free account.</p>
+          <span class="row-label">Cost</span>
+          <p class="small mt-1">Free tier; Plus and Team are paid. See <a href="plans.html">Plans</a>.</p>
+        </div>
+
+        <div class="card tool-card" id="ollama">
+          <div class="tool-name">Ollama <span class="tag tag-free">Free</span> <span class="tag tag-local">Local</span></div>
+          <p class="tool-desc">Runs open-source AI models directly on your own computer or Chromebook. No cloud, no account.</p>
+          <span class="row-label">Good for</span>
+          <ul>
+            <li>Complete privacy — data never leaves your device</li>
+            <li>Learning how AI actually works</li>
+            <li>Simple tasks on school hardware with no sign-in</li>
+          </ul>
+          <span class="row-label">Not great for</span>
+          <ul>
+            <li>Large, complex, or fast tasks (smaller models are weaker)</li>
+            <li>Needs a reasonably powerful device</li>
+            <li>Chromebooks can be limited for bigger models</li>
+          </ul>
+          <span class="row-label">Student data</span>
+          <p class="small mt-1"><span class="tag tag-priv-safe">Safe</span> Stays on your device — the most private option.</p>
+          <span class="row-label">Cost</span>
+          <p class="small mt-1">Free, open source.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ TEACHER WORKFLOW TOOLS ============ -->
+    <section id="teacher-tools">
+      <p class="eyebrow">Category 2 · Built for teachers' daily work</p>
+      <h2>Time-saving tools for planning, differentiation &amp; feedback</h2>
+      <p class="lead mb-3">
+        These are purpose-built to save teachers hours. Great first stop after the big chatbots.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>What it does</th>
+              <th>Good for</th>
+              <th>Not great for</th>
+              <th>Student data</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>MagicSchool</strong></td>
+              <td>Lesson plans, quizzes, rubrics, feedback — dozens of AI "tools" for teachers.</td>
+              <td>Fast lesson &amp; assessment generation; student-facing tools.</td>
+              <td>May feel templated; verify output.</td>
+              <td><span class="tag tag-priv-safe">Safe (edu)</span></td>
+              <td><span class="tag tag-freemium">Free + paid</span></td>
+            </tr>
+            <tr>
+              <td><strong>Brisk Teaching</strong></td>
+              <td>AI that lives inside Google Docs and Slides — creates, differentiates, gives feedback.</td>
+              <td>Working where you already do; differentiation; feedback.</td>
+              <td>Best inside Google tools; less standalone.</td>
+              <td><span class="tag tag-priv-safe">Safe (edu)</span></td>
+              <td><span class="tag tag-freemium">Free + paid</span></td>
+            </tr>
+            <tr>
+              <td><strong>Diffit</strong></td>
+              <td>Differentiates any text to multiple reading levels and standards.</td>
+              <td>Adapting reading material for varied levels &amp; EL students.</td>
+              <td>Best for text-based differentiation.</td>
+              <td><span class="tag tag-priv-safe">Safe (edu)</span></td>
+              <td><span class="tag tag-freemium">Free ~$15/mo paid</span></td>
+            </tr>
+            <tr>
+              <td><strong>Khanmigo (Khan Academy)</strong></td>
+              <td>AI tutor + teacher assistant from Khan Academy.</td>
+              <td>Free teacher tools; tutoring for learners.</td>
+              <td>Learner version has a fee; verify coverage.</td>
+              <td><span class="tag tag-priv-safe">Safe (edu)</span></td>
+              <td><span class="tag tag-free">Free for teachers</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ CLASSROOM / INTERACTIVE ============ -->
+    <section id="classroom-tools">
+      <p class="eyebrow">Category 3 · Interactive lessons &amp; student engagement</p>
+      <h2>Tools for live, teacher-supervised classroom use</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>What it does</th>
+              <th>Good for</th>
+              <th>Not great for</th>
+              <th>Student data</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Curipod</strong></td>
+              <td>Interactive lessons with AI — polls, quizzes, and responses.</td>
+              <td>Engaging whole-class activities; quick checks.</td>
+              <td>Best as a supplement, not the whole lesson.</td>
+              <td><span class="tag tag-priv-safe">Safe (edu)</span></td>
+              <td><span class="tag tag-freemium">Free + paid</span></td>
+            </tr>
+            <tr>
+              <td><strong>SchoolAI</strong></td>
+              <td>"Spaces" where students work with AI under teacher control.</td>
+              <td>Structured, monitored student AI activities.</td>
+              <td>Requires setup; usage caps on free trial.</td>
+              <td><span class="tag tag-priv-safe">Safe (edu)</span></td>
+              <td><span class="tag tag-freemium">Free trial + paid</span></td>
+            </tr>
+            <tr>
+              <td><strong>Canva (for Education)</strong></td>
+              <td>Design tool with AI features (Magic Studio).</td>
+              <td>Student projects, posters, presentations.</td>
+              <td>AI features vary by plan; verify educator free access.</td>
+              <td><span class="tag tag-priv-safe">Safe (edu)</span></td>
+              <td><span class="tag tag-free">Free for educators*</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO CHOOSE ============ -->
+    <section>
+      <p class="eyebrow">Pick the right tool</p>
+      <h2>Which tool should I reach for?</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>📝 I want to plan or write</h3>
+          <p>Start with <strong>Claude</strong> or <strong>Gemini</strong>. For lesson plans fast, add <strong>MagicSchool</strong> or <strong>Brisk</strong>.</p>
+        </div>
+        <div class="card">
+          <h3>📖 I need to differentiate reading</h3>
+          <p><strong>Diffit</strong> is purpose-built for adapting text to levels. <strong>Brisk</strong> does it inside Google Docs.</p>
+        </div>
+        <div class="card">
+          <h3>🎓 I want a monitored student activity</h3>
+          <p><strong>SchoolAI</strong> Spaces or <strong>Curipod</strong> give you teacher-controlled student AI use.</p>
+        </div>
+        <div class="card">
+          <h3>🔒 I care most about privacy</h3>
+          <p><strong>Ollama</strong> runs locally, so nothing leaves the device. Best for sensitive work.</p>
+        </div>
+        <div class="card">
+          <h3>💻 I'm on a Chromebook at school</h3>
+          <p>All the web tools above work in a browser. For local AI on a Chromebook, keep expectations modest.</p>
+        </div>
+        <div class="card">
+          <h3>👩‍🎓 I want to tutor students</h3>
+          <p><strong>Khanmigo</strong> (Khan Academy) offers an AI tutor that's free for teachers.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="callout callout-note">
+      <span class="ico">💡</span>
+      <div>
+        <span class="callout-title">One tool won't do everything</span>
+        <p>
+          Think of these like physical tools — a hammer, a screwdriver, a level. Use the right one for the job.
+          And for the cost breakdown + which plans are safe for student work, see the
+          <a href="plans.html">Free vs Paid Plans</a> page.
+        </p>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="plans.html">See free vs paid plans →</a>
+      <a class="btn btn-ghost" href="privacy.html">Review the privacy rules</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>AI in Education — Professional Learning Hub</h4>
+          <p class="small muted">A year-round resource for [School Name]. Questions? Email <a href="mailto:you@school.edu">you@school.edu</a>.</p>
+        </div>
+        <div>
+          <h4>PD Sessions</h4>
+          <ul>
+            <li><a href="pd-overview.html">Overview &amp; Schedule</a></li>
+            <li><a href="pd1-teachers-tools.html">1 · AI for Your Daily Work</a></li>
+            <li><a href="pd2-classroom.html">2 · AI With Students</a></li>
+            <li><a href="pd3-teaching-ai.html">3 · Teaching Students AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="tools.html">AI Toolbox</a></li>
+            <li><a href="plans.html">Free vs Paid Plans</a></li>
+            <li><a href="policies.html">Policies &amp; Templates</a></li>
+            <li><a href="privacy.html">Privacy &amp; Student Data</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="disclaimer">Tool pricing and features change often — verify on official sites. "AI in Education" is not affiliated with any vendor. © <span data-year>2026</span> [School Name].</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy &amp; Student Data | AI in Education</title>
+  <meta name="description" content="Plain-language rules for what's safe to put into an AI tool and what isn't, plus FERPA basics for K-12 teachers.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">AI</span>
+        <span class="brand-text">AI in Education<span>Professional Learning Hub</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="pd-overview.html">The 3 PD Sessions</a>
+        <a href="tools.html">AI Toolbox</a>
+        <a href="plans.html">Free vs Paid Plans</a>
+        <a href="policies.html">Policies &amp; Templates</a>
+        <a href="department-activities.html">Department Activities</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="pd-hero">
+    <div class="container">
+      <span class="pd-number">PRIVACY &amp; STUDENT DATA</span>
+      <h1>The plain-language rules for protecting student data</h1>
+      <p class="lede">
+        When you paste something into an AI tool, where does it go? Who can see it? Does it train a model?
+        This page gives you simple, actionable rules — no legalese.
+      </p>
+      <div class="pd-meta">
+        <span class="meta-pill">🔒 FERPA basics</span>
+        <span class="meta-pill">🚫 What never to paste</span>
+        <span class="meta-pill">✅ What's safe</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- ===== THE RULE ===== -->
+    <section>
+      <p class="eyebrow">The one rule to remember</p>
+      <h2>If you wouldn't put it on the hallway bulletin board, don't put it in an AI tool</h2>
+      <div class="grid grid-2">
+        <div class="callout callout-ok">
+          <span class="ico">✅</span>
+          <div>
+            <span class="callout-title">Safe to paste (with names removed)</span>
+            <p>
+              Lesson topics · subject content · anonymized assignment prompts · standards text · generic
+              feedback phrasing · a rubric. The moment you remove names and identifiers, the risk drops dramatically.
+            </p>
+          </div>
+        </div>
+        <div class="callout callout-risk">
+          <span class="ico">🚫</span>
+          <div>
+            <span class="callout-title">Never paste into an unapproved tool</span>
+            <p>
+              Full student names · grades · IEP/504 details · medical, family, or discipline info · photos ·
+              voice recordings · email addresses · student ID numbers · anything that identifies a student.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FERPA ===== -->
+    <section>
+      <p class="eyebrow">The law in plain English</p>
+      <h2>What FERPA means for your AI use</h2>
+      <p class="lead mb-3">
+        FERPA (the Family Educational Rights and Privacy Act) protects students' education records. Here's
+        what that means in practice when using AI:
+      </p>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>📋 What counts as a "record"</h3>
+          <p>
+            Grades, transcripts, IEPs, discipline records, and any documentation that identifies a student.
+            Putting these into an AI tool that isn't approved for student data can be a FERPA problem.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🔑 The "school official" test</h3>
+          <p>
+            Data can flow to a "school official with a legitimate educational interest." Consumer AI tools
+            generally don't meet that standard unless the district has a contract (DPA) with them. If there's
+            no contract, treat the tool as <strong>not approved for student data</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="callout callout-note">
+        <span class="ico">💡</span>
+        <div>
+          <span class="callout-title">The good news</span>
+          <p>
+            Removing identifying information ("de-identifying") means it's usually no longer a student
+            record. That's why our #1 rule is: <strong>remove names before you paste</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHO TRAINS ON YOUR DATA ===== -->
+    <section>
+      <p class="eyebrow">The big question</p>
+      <h2>"Does this tool train on my data?"</h2>
+      <p class="lead mb-3">
+        This is the most important distinction. The answer varies by tool <em>and</em> by plan (free vs paid).
+        See the <a href="plans.html">Free vs Paid Plans</a> page for the full breakdown. In general:
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Situation</th>
+              <th>Typical default</th>
+              <th>What it means</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Free consumer AI (no account / personal account)</strong></td>
+              <td><span class="tag tag-warn">Often trains</span></td>
+              <td>Your conversations may be used to train the model. <strong>Do not put student data here.</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Paid consumer plans</strong></td>
+              <td><span class="tag tag-priv-caution">Usually doesn't train</span></td>
+              <td>Most paid plans state they don't train on your conversations. Still avoid identifiable student data unless approved.</td>
+            </tr>
+            <tr>
+              <td><strong>School / education plans</strong></td>
+              <td><span class="tag tag-priv-safe">Doesn't train</span></td>
+              <td>Contractually protected. This is the safe way to use AI with student data.</td>
+            </tr>
+            <tr>
+              <td><strong>Local AI (runs on your device)</strong></td>
+              <td><span class="tag tag-priv-safe">Stays on device</span></td>
+              <td>Ollama and similar run entirely on your machine. Data never leaves your device.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== DECISION FLOW ===== -->
+    <section>
+      <p class="eyebrow">Before you paste</p>
+      <h2>The 10-second decision</h2>
+      <ol class="steps">
+        <li>
+          <h4>Is there identifiable student info?</h4>
+          <p>Names, grades, IEP details, anything personal? If yes, <strong>remove it first</strong>.</p>
+        </li>
+        <li>
+          <h4>Is the tool approved for student data?</h4>
+          <p>Check the <a href="plans.html">approved list</a>. If it's a school/district account or a local tool, you're generally safe.</p>
+        </li>
+        <li>
+          <h4>Is the free tier going to train on it?</h4>
+          <p>If it's a free consumer account and might train, <strong>don't paste student data</strong> — period.</p>
+        </li>
+        <li>
+          <h4>When in doubt, ask</h4>
+          <p>Ask your department lead or IT before trying something new. Better to ask than to put a student at risk.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== FAMILIES ===== -->
+    <section>
+      <p class="eyebrow">Equity &amp; access</p>
+      <h2>Privacy is also an equity issue</h2>
+      <p class="lead mb-3">
+        If some students' parents pay for premium AI and others can't, that's an equity gap. And every
+        family has a right to know how their child's data is (and isn't) used.
+      </p>
+      <div class="grid grid-2">
+        <div class="callout callout-tip">
+          <span class="ico">🗣️</span>
+          <div><span class="callout-title">Communicate with families</span><p>Let families know which AI tools you use with students, what data (if any) is involved, and how to opt out.</p></div>
+        </div>
+        <div class="callout callout-tip">
+          <span class="ico">⚖️</span>
+          <div><span class="callout-title">Prefer free, approved tools</span><p>Using free, district-approved tools means every student can participate regardless of what their family can afford.</p></div>
+        </div>
+      </div>
+      <p class="small muted mt-2">
+        For more depth, see the <a href="resources.html">Resources</a> page (FERPA + AI guidance) and the
+        <a href="plans.html">Free vs Paid Plans</a> page.
+      </p>
+    </section>
+
+    <div class="btn-row">
+      <a class="btn btn-primary" href="plans.html">See the full plan breakdown →</a>
+      <a class="btn btn-ghost" href="policies.html">Grab the policy templates</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>AI in Education — Professional Learning Hub</h4>
+          <p class="small muted">A year-round resource for [School Name]. Questions? Email <a href="mailto:you@school.edu">you@school.edu</a>.</p>
+        </div>
+        <div>
+          <h4>PD Sessions</h4>
+          <ul>
+            <li><a href="pd-overview.html">Overview &amp; Schedule</a></li>
+            <li><a href="pd1-teachers-tools.html">1 · AI for Your Daily Work</a></li>
+            <li><a href="pd2-classroom.html">2 · AI With Students</a></li>
+            <li><a href="pd3-teaching-ai.html">3 · Teaching Students AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reference</h4>
+          <ul>
+            <li><a href="tools.html">AI Toolbox</a></li>
+            <li><a href="plans.html">Free vs Paid Plans</a></li>
+            <li><a href="policies.html">Policies &amp; Templates</a></li>
+            <li><a href="privacy.html">Privacy &amp; Student Data</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="disclaimer">Not legal advice. Consult your district's legal counsel and IT for binding decisions. © <span data-year>2026</span> [School Name].</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
