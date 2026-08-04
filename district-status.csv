@@ -1,13 +1,18 @@
-Tool,Category,Where it appears,District status (fill in),Notes
-Gemini (Google),All-purpose assistant,Tools page + Plans page,,
-Claude (Anthropic),All-purpose assistant,Tools page + Plans page,,
-ChatGPT (OpenAI),All-purpose assistant,Tools page + Plans page,,
-"Ollama (local, free)",All-purpose assistant,Tools page + Plans page,,
-Microsoft Copilot / M365,All-purpose assistant,Plans page,,
-MagicSchool,Teacher workflow,Tools page + Plans page,,
-Brisk Teaching,Teacher workflow,Tools page + Plans page,,
-Diffit,Teacher workflow,Tools page + Plans page,,
-Khanmigo (Khan Academy),Teacher workflow,Tools page + Plans page,,
-Curipod,Classroom / interactive,Tools page + Plans page,,
-SchoolAI,Classroom / interactive,Tools page + Plans page,,
-Canva (for Education),Classroom / interactive,Tools page + Plans page,,
+Tool,Category,Where it appears,District status,Notes
+Gemini (Google),All-purpose assistant,Tools page + Plans page,Approved for teacher use,Listed on PPS approved staff tools
+Adobe Express,Design / creative,Tools page (approved),Approved,Listed on PPS approved staff tools
+Canva (for Education),Design / creative,Tools page + Plans page,Approved,Listed on PPS approved staff tools
+Kami,Document / PDF annotation,Tools page (approved),Approved,Listed on PPS approved staff tools
+Screencastify,Screen recording / video,Tools page (approved),Approved,Listed on PPS approved staff tools
+NotebookLM,Teacher workflow,Tools page (approved),Approved for teacher use,Added from owner CSV
+"Ollama (local, free)",All-purpose assistant,Tools page + Plans page,Approved for teacher use,Added from owner CSV
+Diffit,Teacher workflow,Tools page + Plans page,Approved for teacher use,Added from owner CSV
+SchoolAI,Classroom / interactive,Tools page + Plans page,Approved for teacher use,Added from owner CSV
+Claude (Anthropic),All-purpose assistant,Tools page + Plans page,Under review,Including Claude for education
+ChatGPT (OpenAI),All-purpose assistant,Tools page + Plans page,Denied,Consumer ChatGPT denied; teacher version under review
+ChatGPT for teachers (OpenAI),All-purpose assistant,Plans page,Under review,Teacher-specific version
+Microsoft Copilot / M365,All-purpose assistant,Plans page,Under review,,
+MagicSchool,Teacher workflow,Tools page + Plans page,Denied,,
+Brisk Teaching,Teacher workflow,Tools page + Plans page,Denied,,
+Khanmigo (Khan Academy),Teacher workflow,Tools page + Plans page,Denied,,
+Curipod,Classroom / interactive,Tools page + Plans page,Denied,,

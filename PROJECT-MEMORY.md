@@ -24,12 +24,27 @@ Core principles that gate every activity:
 ## Approved-software workflow (IMPORTANT)
 - District IT keeps the approved-software list at **LearnPlatform**:
   `https://pps.app.learnplatform.com/new/organizations/153034/organization_tools`
-- This URL redirects to **ClassLink SSO** and requires district authentication
-  (owner can log in if needed).
-- **Rule:** Every tool recommended on the site must be checked against this approved list.
-  The site's Tools and Plans pages have an "Approval status" / district column for exactly this.
-- When you cannot reach the list yourself, mark status as "Unverified — check district list"
-  and/or ask the owner to pull it.
+- The PPS AI page (official policy language + approved staff tools):
+  `https://www.pps.net/departments/office-of-teaching-learning/artificial-intelligence-in-pps`
+  AI Guidebook: `.../ai-guidebook`
+- **Rule:** Every tool on the site must reflect its PPS approval status. The Tools page leads with
+  PPS-approved staff tools; denied tools are minimized to a compact "Not approved" block (no usage how-to).
+- **PPS-approved AI staff tools:** Gemini, Adobe Express, Canva, Kami, Screencastify.
+  Also approved for teacher use per owner CSV: NotebookLM, Ollama, Diffit, SchoolAI.
+  Under review: Claude, ChatGPT for teachers, Microsoft Copilot/M365.
+  NOT approved: ChatGPT (consumer), MagicSchool, Brisk Teaching, Khanmigo, Curipod.
+- **PPS key policy language** (incorporate on the site):
+  - Vision: AI as "a transformative, ethical, and human-centered tool to accelerate student achievement,
+    disrupt systemic inequities, and prepare every graduate for an AI-powered future."
+  - AI is governed by the Acceptable Use Policy (AUP) and Administrative Directive 8.60.041-AD.
+  - Approved vs Non-Approved categories; staff can use approved AI for learning design, admin tasks,
+    instructional support. Always human oversight + transparency (cite AI use).
+  - Never upload student work/grades/PII into AI tools unless district authorized + DPA in place.
+  - Do NOT rely on AI detection tools (unreliable, bias against non-native English speakers).
+  - PPS encourages Gemini with district accounts (no training on your data).
+  - Student use model: Restrictive (no AI) / Moderate (AI with citation) / Permissive (AI without citation).
+- When you cannot reach the list yourself, mark status honestly and/or ask the owner to supply it.
+  Live data source: `district-status.csv` in the repo root.
 
 ## Policy templates
 - `downloads/policy-*.docx` (+ source `.md`) — department-specific AI use policies, Google-Docs-ready.

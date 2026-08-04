@@ -62,10 +62,9 @@
       <span><span class="tag tag-edu">Edu plan</span></span>
     </div>
     <div class="legend">
-      <span><span class="tag tag-appr-approved">Approved</span> on PPS LearnPlatform</span>
-      <span><span class="tag tag-appr-notapproved">Not approved</span> on PPS LearnPlatform</span>
-      <span><span class="tag tag-appr-pending">Pending</span> review with IT</span>
-      <span><span class="tag tag-appr-unverified">Check district list</span> status not yet verified</span>
+      <span><span class="tag tag-appr-approved">Approved</span> vetted for staff use</span>
+      <span><span class="tag tag-appr-pending">Under review</span> not yet approved</span>
+      <span><span class="tag tag-appr-notapproved">Not approved</span> do not use</span>
     </div>
 
     <!-- ===== THE KEY INSIGHT ===== -->
@@ -107,7 +106,9 @@
       <p class="eyebrow">The breakdown</p>
       <h2>All the plans, compared</h2>
       <p class="lead mb-3">
-        Prices are as of <strong>August 2026</strong> and change often — verify on official sites. "Student work safe?" is the key column.
+        Prices are as of <strong>August 2026</strong> and change often — verify on official sites. The
+        "District" column reflects PPS approval status. Tools shown are approved or under review; not-approved
+        tools are listed separately below.
       </p>
       <div class="table-wrap">
         <table>
@@ -119,79 +120,27 @@
               <th>Paid (personal)</th>
               <th>Student work safe?</th>
               <th>Notes</th>
-              <th>District<br><span class="hint">LearnPlatform</span></th>
+              <th>District</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><strong>Gemini (Google)</strong></td>
               <td>Free consumer tier</td>
-              <td>Google Workspace for Education (A1 free → A3/A5)</td>
+              <td>Google Workspace for Education (district account)</td>
               <td>Google AI Plus ~$10/mo, Pro ~$20/mo</td>
-              <td><span class="tag tag-priv-safe">Safe</span> only on a school Workspace account</td>
-              <td>Consumer free tier may train; use the school account for students.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
+              <td><span class="tag tag-priv-safe">Safe</span> with district Workspace account</td>
+              <td>PPS encourages staff to use Gemini with district accounts — no training on your data.</td>
+              <td><span class="tag tag-appr-approved">Approved</span> for teacher use</td>
             </tr>
             <tr>
-              <td><strong>Claude (Anthropic)</strong></td>
-              <td>Free tier</td>
-              <td>Claude for Education / institutional (discounted)</td>
-              <td>Pro $17–20/mo; Max from $100/mo; Team $20–25/seat/mo</td>
-              <td><span class="tag tag-priv-safe">Safe</span> only on approved edu plan</td>
-              <td>"No model training on your content by default"; edu plan adds academic research mode + API credits.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
-            </tr>
-            <tr>
-              <td><strong>ChatGPT (OpenAI)</strong></td>
-              <td>Free tier</td>
-              <td>ChatGPT for Education / Workspace</td>
-              <td>Plus, Team (paid)</td>
-              <td><span class="tag tag-priv-safe">Safe</span> only on edu plan</td>
-              <td>Never put student PII in a personal free ChatGPT account.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
-            </tr>
-            <tr>
-              <td><strong>Microsoft Copilot</strong></td>
-              <td>Copilot Chat free with a school/work account</td>
-              <td>M365 A1 (free) → A3/A5; Copilot in Education (academic)</td>
-              <td>Copilot Pro ~$20/mo</td>
-              <td><span class="tag tag-priv-safe">Safe</span> on school M365</td>
-              <td>Copilot in Education (academic) ~$18/user/mo; Copilot Chat is free for school accounts.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
-            </tr>
-            <tr>
-              <td><strong>Ollama (local)</strong></td>
-              <td>Free, open source</td>
-              <td>Runs on school devices</td>
-              <td>Pro $20/mo or $200/yr (cloud)</td>
-              <td><span class="tag tag-priv-safe">Safe</span> (stays on device)</td>
-              <td>Most private option — "your data is never trained on"; local use is free and offline.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
-            </tr>
-            <tr>
-              <td><strong>MagicSchool</strong></td>
-              <td>Free teacher plan (80+ tools)</td>
-              <td>Enterprise (districts, custom)</td>
-              <td>Plus $8.33/user/mo (annual) or $12.99/mo</td>
+              <td><strong>Canva (for Education)</strong></td>
+              <td>Free (limited)</td>
+              <td>Canva for Education (free for verified educators)</td>
+              <td>Canva Pro (paid)</td>
               <td><span class="tag tag-priv-safe">Safe</span> (edu)</td>
-              <td>FERPA/COPPA/SOC-2/GDPR compliant; free tier is "Forever Free."</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
-            </tr>
-            <tr>
-              <td><strong>Brisk Teaching</strong></td>
-              <td>Free "Forever" (20+ tools)</td>
-              <td>Premium / Intelligence (districts, custom)</td>
-              <td>Premium (custom/quote)</td>
-              <td><span class="tag tag-priv-safe">Safe</span> (edu)</td>
-              <td>Lives inside Google Docs/Slides; 93% Common Sense privacy rating.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
+              <td>Design + AI (Magic Studio). Listed on PPS approved staff tools.</td>
+              <td><span class="tag tag-appr-approved">Approved</span></td>
             </tr>
             <tr>
               <td><strong>Diffit</strong></td>
@@ -199,29 +148,8 @@
               <td>Diffit for Schools (quote)</td>
               <td>$14.99/mo or $149.99/yr</td>
               <td><span class="tag tag-priv-safe">Safe</span> (edu)</td>
-              <td>Differentiates reading levels; "zero student data collected"; FERPA/COPPA compliant.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
-            </tr>
-            <tr>
-              <td><strong>Khanmigo</strong></td>
-              <td><strong>Free for teachers</strong></td>
-              <td>Khanmigo for Districts (quote)</td>
-              <td>Learners ~$4/mo (students/families)</td>
-              <td><span class="tag tag-priv-safe">Safe</span> (edu)</td>
-              <td>Teacher access is now free; student/family access is a paid $4/mo subscription.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
-            </tr>
-            <tr>
-              <td><strong>Curipod</strong></td>
-              <td>Free plan (limited usage)</td>
-              <td>School & District (custom)</td>
-              <td>Paid tiers</td>
-              <td><span class="tag tag-priv-safe">Safe</span> (edu)</td>
-              <td>Interactive lessons; FERPA/COPPA/GDPR compliant.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
+              <td>Differentiates reading levels.</td>
+              <td><span class="tag tag-appr-approved">Approved</span> for teacher use</td>
             </tr>
             <tr>
               <td><strong>SchoolAI</strong></td>
@@ -229,28 +157,61 @@
               <td>Pro / Scale (districts, custom)</td>
               <td>Pro, Scale (quote)</td>
               <td><span class="tag tag-priv-safe">Safe</span> (edu)</td>
-              <td>Monitored student "Spaces"; FERPA/COPPA/SOC-2/TrustEd certified.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
+              <td>Monitored student "Spaces".</td>
+              <td><span class="tag tag-appr-approved">Approved</span> for teacher use</td>
             </tr>
             <tr>
-              <td><strong>Canva</strong></td>
-              <td>Free (limited)</td>
-              <td>Canva for Education (free for verified educators)</td>
-              <td>Canva Pro (paid)</td>
-              <td><span class="tag tag-priv-safe">Safe</span> (edu)</td>
-              <td>Design + AI (Magic Studio). Verify educator free access.</td>
-            
-              <td><span class="tag tag-appr-unverified">Check district list</span></td>
+              <td><strong>Ollama (local)</strong></td>
+              <td>Free, open source</td>
+              <td>Runs on school devices</td>
+              <td>Pro $20/mo or $200/yr (cloud)</td>
+              <td><span class="tag tag-priv-safe">Safe</span> (stays on device)</td>
+              <td>Most private option — data never leaves the machine.</td>
+              <td><span class="tag tag-appr-approved">Approved</span> for teacher use</td>
+            </tr>
+            <tr>
+              <td><strong>NotebookLM (Google)</strong></td>
+              <td>Free</td>
+              <td>Works with your PPS Google account</td>
+              <td>—</td>
+              <td><span class="tag tag-priv-safe">Safe</span> grounded in your sources</td>
+              <td>Answers only from documents you upload — low hallucination risk.</td>
+              <td><span class="tag tag-appr-approved">Approved</span> for teacher use</td>
+            </tr>
+            <tr>
+              <td><strong>Claude (Anthropic)</strong></td>
+              <td>Free tier</td>
+              <td>Claude for Education / institutional (under review)</td>
+              <td>Pro $17–20/mo; Max from $100/mo; Team $20–25/seat/mo</td>
+              <td><span class="tag tag-priv-caution">Caution</span> only if approved</td>
+              <td>"No model training on your content by default."</td>
+              <td><span class="tag tag-appr-pending">Under review</span></td>
+            </tr>
+            <tr>
+              <td><strong>ChatGPT for teachers (OpenAI)</strong></td>
+              <td>—</td>
+              <td>ChatGPT for Education (under review)</td>
+              <td>Plus, Team (paid)</td>
+              <td><span class="tag tag-priv-caution">Caution</span> only if approved</td>
+              <td>Teacher-specific offering from OpenAI.</td>
+              <td><span class="tag tag-appr-pending">Under review</span></td>
+            </tr>
+            <tr>
+              <td><strong>Microsoft Copilot / M365</strong></td>
+              <td>Copilot Chat free with school account</td>
+              <td>M365 A1 → A3/A5; Copilot in Education</td>
+              <td>Copilot Pro ~$20/mo</td>
+              <td><span class="tag tag-priv-caution">Caution</span> only if approved</td>
+              <td>Check with IT whether your M365 plan includes it.</td>
+              <td><span class="tag tag-appr-pending">Under review</span></td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="small muted mt-1">
-        Prices verified or estimated August 2026 from official sites where accessible. Some vendor pages
-        were rate-limited during our check — re-verify before relying on exact figures. The "District"
-        column reflects the Portland Public Schools approved-software list (LearnPlatform); tools marked
-        "Check district list" have not yet been verified there.
+        District approval reflects the PPS approved-software list and the PPS AI page at the time of writing.
+        Not-approved tools (ChatGPT consumer, MagicSchool, Brisk Teaching, Khanmigo, Curipod) are not listed
+        here — see <a href="tools.html">the Toolbox</a> for the full picture.
       </p>
     </section>
 
@@ -289,7 +250,7 @@
         </div>
         <div class="callout callout-tip">
           <span class="ico">💳</span>
-          <div><span class="callout-title">Free for the school</span><p>Many edu plans (Canva for Education, Khanmigo for teachers, Workspace A1) are free for schools — great for equity.</p></div>
+          <div><span class="callout-title">Free for the school</span><p>Many edu plans (Canva for Education, Google Workspace) are free for schools — great for equity.</p></div>
         </div>
         <div class="callout callout-tip">
           <span class="ico">⚖️</span>
