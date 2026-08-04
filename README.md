@@ -43,7 +43,7 @@ including school Chromebooks.
 
 ## Customize for your school
 
-- Replace `[School Name]` and `you@school.edu` in the footer and email links across all pages.
+- Replace `Ida B. Wells High School` and `aansell@pps.net` in the footer and email links across all pages.
 - Review `pages/tools.html` and `pages/plans.html` — tool pricing/features change; re-verify on
   official sites and update. Keep the notes in `RESEARCH-NOTES.md` current.
 - Make the department policy templates in `downloads/` your own.

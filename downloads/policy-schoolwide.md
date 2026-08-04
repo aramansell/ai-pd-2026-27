@@ -2,7 +2,7 @@
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** School-wide (all teachers)
-**School:** [School Name]
+**School:** Ida B. Wells High School
 **Last updated:** [Date]
 
 **Focus:** the umbrella policy

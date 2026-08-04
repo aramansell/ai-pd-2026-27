@@ -2,7 +2,7 @@
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** English / Language Arts
-**School:** [School Name]
+**School:** Ida B. Wells High School
 **Last updated:** [Date]
 
 ## Our stance
