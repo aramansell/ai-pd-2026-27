@@ -78,38 +78,54 @@
       </div>
     </section>
 
-    <!-- ===== FERPA ===== -->
+    <!-- ===== FERPA & LAWS ===== -->
     <section>
-      <p class="eyebrow">The law in plain English</p>
-      <h2>What FERPA means for your AI use</h2>
+      <p class="eyebrow">The laws in plain English</p>
+      <h2>What FERPA, COPPA, CIPA &amp; OSIPA mean for your AI use</h2>
       <p class="lead mb-3">
-        FERPA (the Family Educational Rights and Privacy Act) protects students' education records. Here's
-        what that means in practice when using AI:
+        Several laws protect student data. The PPS AI Guidebook names all of them — here's what each means
+        when using AI:
       </p>
       <div class="grid grid-2">
         <div class="card">
-          <h3>📋 What counts as a "record"</h3>
+          <h3>📋 FERPA</h3>
           <p>
-            Grades, transcripts, IEPs, discipline records, and any documentation that identifies a student.
-            Putting these into an AI tool that isn't approved for student data can be a FERPA problem.
+            The Family Educational Rights and Privacy Act protects students' education records — grades,
+            transcripts, IEPs, discipline records, anything that identifies a student. Putting these into an
+            AI tool that isn't approved can be a FERPA problem.
           </p>
         </div>
         <div class="card">
-          <h3>🔑 The "school official" test</h3>
+          <h3>🔑 COPPA</h3>
           <p>
-            Data can flow to a "school official with a legitimate educational interest." Consumer AI tools
-            generally don't meet that standard unless the district has a contract (DPA) with them. If there's
-            no contract, treat the tool as <strong>not approved for student data</strong>.
+            The Children's Online Privacy Protection Act requires parental consent before collecting the
+            personal information of children under 13. Many consumer AI tools are 13+ or 18+ for this reason.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🛡️ CIPA</h3>
+          <p>
+            The Children's Internet Protection Act requires filtering and monitoring of internet access for
+            minors on school networks — which is why school Chromebooks filter content.
+          </p>
+        </div>
+        <div class="card">
+          <h3>🌲 OSIPA (Oregon)</h3>
+          <p>
+            The Oregon Student Information Protection Act is the state law on top of the federal ones. It
+            prohibits using student data for targeted advertising or non-educational profiling. Some AI
+            vendors aren't aware of OSIPA — only district-approved tools are vetted for it.
           </p>
         </div>
       </div>
       <div class="callout callout-note">
         <span class="ico">💡</span>
         <div>
-          <span class="callout-title">The good news</span>
+          <span class="callout-title">The bottom line</span>
           <p>
-            Removing identifying information ("de-identifying") means it's usually no longer a student
-            record. That's why our #1 rule is: <strong>remove names before you paste</strong>.
+            Only use <strong>district-approved AI tools</strong> that have been vetted for compliance with
+            FERPA, COPPA, CIPA, and OSIPA — with a Data Privacy Agreement (DPA) in place. This is why we point
+            you to the <a href="tools.html">approved tools</a> rather than consumer free tools.
           </p>
         </div>
       </div>
@@ -156,6 +172,57 @@
           </tbody>
         </table>
       </div>
+    </section>
+
+    <!-- ===== DEEPFAKES & MEDIA ===== -->
+    <section>
+      <p class="eyebrow">Media manipulation</p>
+      <h2>Deepfakes &amp; manipulated media</h2>
+      <p class="lead mb-3">
+        The PPS AI Guidebook calls out AI's ability to create realistic fake images, video, and audio.
+        Creating or sharing manipulated media that misrepresents, harasses, bullies, or harms someone is a
+        <strong>prohibited use</strong> under PPS policy.
+      </p>
+      <div class="grid grid-2">
+        <div class="callout callout-risk">
+          <span class="ico">🚫</span>
+          <div><span class="callout-title">Don't do this</span><p>Creating or sharing deepfakes or AI-generated media to deceive, harass, intimidate, bully, defraud, or harm others. This includes realistic fake images, video, and audio.</p></div>
+        </div>
+        <div class="callout callout-tip">
+          <span class="ico">🛡️</span>
+          <div><span class="callout-title">Teach students to question</span><p>Build media literacy: question whether media is real, verify sources, and understand that AI can fabricate convincing content. See <a href="pd3-teaching-ai.html">Session 3</a> for bias and evaluation lessons.</p></div>
+        </div>
+      </div>
+      <p class="small muted mt-1">
+        If a student creates or shares manipulated media targeting someone, follow PPS restorative practices
+        and the Student Rights, Responsibilities, and Discipline Handbook. Report harmful or suspicious online
+        activity per district policy.
+      </p>
+    </section>
+
+    <!-- ===== ENVIRONMENTAL ===== -->
+    <section>
+      <p class="eyebrow">Environmental impact</p>
+      <h2>AI has a real environmental cost</h2>
+      <p class="lead mb-3">
+        The PPS AI Guidebook (Section 07) highlights that AI data centers use significant energy and water.
+        Training a single large model can emit as much CO₂ as five gasoline-powered cars over their full
+        lifespan.
+      </p>
+      <div class="grid grid-2">
+        <div class="callout callout-note">
+          <span class="ico">🌎</span>
+          <div><span class="callout-title">Sustainable, thoughtful use</span><p>Before generating, ask: "Is there a way to accomplish this task with less harm?" Not every query needs a heavyweight model — simple tasks can use efficient ones.</p></div>
+        </div>
+        <div class="callout callout-tip">
+          <span class="ico">🧑‍🏫</span>
+          <div><span class="callout-title">A teaching moment</span><p>Engage students in critical conversations about AI's energy and water use, climate justice, and how technology revolutions shape resource use.</p></div>
+        </div>
+      </div>
+      <p class="small muted mt-1">
+        Note: per the Guidebook, Gemini is currently one of the more energy-efficient models per query, while
+        "reasoning" models are far more energy-intensive. This matters for everyday use.
+      </p>
     </section>
 
     <!-- ===== DECISION FLOW ===== -->
@@ -234,6 +301,7 @@
           <ul>
             <li><a href="tools.html">AI Toolbox</a></li>
             <li><a href="plans.html">Free vs Paid Plans</a></li>
+            <li><a href="https://www.pps.net/departments/office-of-teaching-learning/artificial-intelligence-in-pps/ai-guidebook" target="_blank" rel="noopener">PPS AI Guidebook</a></li>
             <li><a href="policies.html">Policies &amp; Templates</a></li>
             <li><a href="privacy.html">Privacy &amp; Student Data</a></li>
           </ul>

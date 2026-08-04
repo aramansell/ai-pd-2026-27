@@ -26,7 +26,12 @@ Core principles that gate every activity:
   `https://pps.app.learnplatform.com/new/organizations/153034/organization_tools`
 - The PPS AI page (official policy language + approved staff tools):
   `https://www.pps.net/departments/office-of-teaching-learning/artificial-intelligence-in-pps`
-  AI Guidebook: `.../ai-guidebook`
+  AI Guidebook: `.../ai-guidebook` (full guidebook URL:
+  `https://ppsnet.finalsite.com/departments/office-of-teaching-learning/artificial-intelligence-in-pps/ai-guidebook`)
+  Guidebook sections: Intro/Objectives · AI for Staff · AI Levels of Use for Students
+  (Restrictive/Moderate/Permissive) · Responsible AI Use · Data Privacy & Security · Environmental
+  Impact · AI & Academic Integrity · Approved PPS AI Tools · Guidance for Families · Resources ·
+  References · Feedback.
 - **Rule:** Every tool on the site must reflect its PPS approval status. The Tools page leads with
   PPS-approved staff tools; denied tools are minimized to a compact "Not approved" block (no usage how-to).
 - **PPS-approved AI staff tools:** Gemini, Adobe Express, Canva, Kami, Screencastify.
