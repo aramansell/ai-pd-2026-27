@@ -13,7 +13,7 @@ and equitably in K-12 schools:
 - **Session 3 — Teaching Students to Use AI Well** (AI literacy, ethics, bias, academic honesty)
 
 Plus:
-- **AI Toolbox** — side-by-side tool comparisons (Gemini, Claude, ChatGPT, Ollama, education tools)
+- **AI Toolbox** — PPS-approved AI tools for staff, plus tools under review and a compact not-approved list
 - **Free vs Paid Plans** — where student work can and can't go
 - **Policies & Templates** — downloadable, department-specific AI use policies
 - **Department Activities** — a year-long collaborative calendar
