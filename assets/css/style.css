@@ -273,6 +273,14 @@ th .hint { display: block; font-weight: 400; color: rgba(255,255,255,.85); font-
 .tag-local { background: #EEF6F1; color: #2F6B4F; }
 .tag-no    { background: #F0F0EC; color: #6B6F70; }
 
+/* District approval-status tags */
+.tag-appr-approved  { background: var(--ok-bg); color: var(--ok); }
+.tag-appr-notapproved { background: var(--risk-bg); color: var(--risk); }
+.tag-appr-pending   { background: var(--warn-bg); color: var(--accent-dark); }
+.tag-appr-unverified{ background: #EFEFF0; color: #6B6F70; border: 1px dashed #B8BEC0; }
+.tag-appr-notes     { background: var(--teal-soft); color: var(--primary-dark); }
+.appr-note { display: block; font-size: .72rem; color: var(--muted); margin-top: 3px; }
+
 .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: .8rem; color: var(--muted); margin: 10px 0 4px; }
 .legend span { display: inline-flex; align-items: center; gap: 6px; }
 
