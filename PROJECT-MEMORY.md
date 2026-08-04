@@ -31,8 +31,13 @@ Core principles that gate every activity:
   PPS-approved staff tools; denied tools are minimized to a compact "Not approved" block (no usage how-to).
 - **PPS-approved AI staff tools:** Gemini, Adobe Express, Canva, Kami, Screencastify.
   Also approved for teacher use per owner CSV: NotebookLM, Ollama, Diffit, SchoolAI.
-  Under review: Claude, ChatGPT for teachers, Microsoft Copilot/M365.
+  Under review: Claude (incl. Claude for Education), ChatGPT for teachers, Microsoft Copilot/M365.
   NOT approved: ChatGPT (consumer), MagicSchool, Brisk Teaching, Khanmigo, Curipod.
+- **Verified pricing (2026-08):** Claude Free $0; Pro $17/mo annual ($200 upfront) / $20 monthly;
+  Max from $100/mo (5x or 20x usage); Team $20/seat annual / $25 monthly (Premium seat $100/$125).
+  Claude for Education: institutional plan for students/faculty/staff at discounted rates, academic
+  research & learning mode (API credits), training & enablement. "No model training on your content by
+  default" on Team/Enterprise.
 - **PPS key policy language** (incorporate on the site):
   - Vision: AI as "a transformative, ethical, and human-centered tool to accelerate student achievement,
     disrupt systemic inequities, and prepare every graduate for an AI-powered future."

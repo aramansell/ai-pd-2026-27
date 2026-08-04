@@ -8,7 +8,8 @@ NotebookLM,Teacher workflow,Tools page (approved),Approved for teacher use,Added
 "Ollama (local, free)",All-purpose assistant,Tools page + Plans page,Approved for teacher use,Added from owner CSV
 Diffit,Teacher workflow,Tools page + Plans page,Approved for teacher use,Added from owner CSV
 SchoolAI,Classroom / interactive,Tools page + Plans page,Approved for teacher use,Added from owner CSV
-Claude (Anthropic),All-purpose assistant,Tools page + Plans page,Under review,Including Claude for education
+Claude (Anthropic),All-purpose assistant,Tools page + Plans page,Under review,Free $0; Pro $17/mo annual ($20 monthly); Max from $100/mo; Team $20/seat annual; no model training by default on paid
+Claude for Education (Anthropic),All-purpose assistant,Tools page + Plans page,Under review,Institutional plan for students/faculty/staff; academic research mode; API credits
 ChatGPT (OpenAI),All-purpose assistant,Tools page + Plans page,Denied,Consumer ChatGPT denied; teacher version under review
 ChatGPT for teachers (OpenAI),All-purpose assistant,Plans page,Under review,Teacher-specific version
 Microsoft Copilot / M365,All-purpose assistant,Plans page,Under review,,
