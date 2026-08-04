@@ -1,4 +1,4 @@
-# Project Memory — AI in Education PD Hub
+# Project Memory, AI in Education PD Hub
 
 This file is the project-scoped memory for the AI PD site. Everything here is specific to
 this repo and does not belong in global Hermes memory. Keep it current as the project evolves.
@@ -57,8 +57,8 @@ Core principles that gate every activity:
   Live data source: `district-status.csv` in the repo root.
 
 ## Policy templates
-- `downloads/policy-*.docx` (+ source `.md`) — department-specific AI use policies, Google-Docs-ready.
-- `downloads/classroom-agreement.docx` — student-facing "Honest Work" agreement.
+- `downloads/policy-*.docx` (+ source `.md`), department-specific AI use policies, Google-Docs-ready.
+- `downloads/classroom-agreement.docx`, student-facing "Honest Work" agreement.
 - Regenerate docx from md: `python3 scripts/md_to_docx.py`
 - To make them live Drive links: upload .docx → open as Google Doc → swap link on policies page.
 

@@ -1,4 +1,4 @@
-# Department AI Use Policy — World Languages
+# Department AI Use Policy, World Languages
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** World Languages

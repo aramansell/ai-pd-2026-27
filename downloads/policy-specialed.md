@@ -1,4 +1,4 @@
-# Department AI Use Policy — Special Education / EL
+# Department AI Use Policy, Special Education / EL
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** Special Education / EL
@@ -8,7 +8,7 @@
 **Focus:** AI as an accommodation, protecting privacy
 
 ## Our stance
-AI can be a powerful accommodation and support for students with disabilities and English learners. We use it to increase access and independence — always protecting privacy and never replacing necessary human support.
+AI can be a powerful accommodation and support for students with disabilities and English learners. We use it to increase access and independence, always protecting privacy and never replacing necessary human support.
 
 ## Students MAY use AI for (as an accommodation)
 - Text-to-speech / reading support

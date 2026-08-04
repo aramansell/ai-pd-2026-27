@@ -1,4 +1,4 @@
-# Department AI Use Policy — Social Studies / History
+# Department AI Use Policy, Social Studies / History
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** Social Studies / History
@@ -32,7 +32,7 @@ When AI is used, students credit it (e.g., \"Used AI to outline my essay\"). Tea
 - Use only school-approved tools (see the Free vs Paid Plans page)
 
 ## Notes
-- AI can fabricate citations — always verify sources are real.
+- AI can fabricate citations, always verify sources are real.
 - Be alert to bias in AI output and discuss it.
 - When in doubt, ASK the teacher first.
 - This policy will be reviewed and updated in winter and spring.

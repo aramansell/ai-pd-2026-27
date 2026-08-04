@@ -1,4 +1,4 @@
-# Department AI Use Policy — Science
+# Department AI Use Policy, Science
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** Science
@@ -8,7 +8,7 @@
 **Focus:** lab write-ups and data analysis
 
 ## Our stance
-AI is a tool for investigating and communicating, not for producing conclusions. Students do the thinking, observing, and reasoning; AI can help them write, organize, and understand — but the science is theirs.
+AI is a tool for investigating and communicating, not for producing conclusions. Students do the thinking, observing, and reasoning; AI can help them write, organize, and understand, but the science is theirs.
 
 ## Students MAY use AI for
 - Organizing lab notes and observations

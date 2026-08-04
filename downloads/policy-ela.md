@@ -1,4 +1,4 @@
-# Department AI Use Policy — English / Language Arts
+# Department AI Use Policy, English / Language Arts
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** English / Language Arts
@@ -7,8 +7,8 @@
 
 ## Our stance
 AI is a writing tool, not a replacement for a writer. We use it to strengthen the
-writing process — generating ideas, organizing thoughts, and getting feedback on
-drafts — while holding students responsible for their own words, thinking, and voice.
+writing process, generating ideas, organizing thoughts, and getting feedback on
+drafts, while holding students responsible for their own words, thinking, and voice.
 
 ## Students MAY use AI for
 - Brainstorming topic ideas and thesis angles

@@ -1,4 +1,4 @@
-# Department AI Use Policy — Mathematics
+# Department AI Use Policy, Mathematics
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** Mathematics

@@ -1,4 +1,4 @@
-# AI in Education — Professional Learning Hub
+# AI in Education, Professional Learning Hub
 
 A year-round professional learning resource for whole-school AI training, built as a static
 site that lives on GitHub Pages.
@@ -8,21 +8,21 @@ site that lives on GitHub Pages.
 Three 40-minute PD sessions plus a year-round resource hub for using AI effectively, ethically,
 and equitably in K-12 schools:
 
-- **Session 1 — AI for Your Daily Work** (planning, differentiation, rubrics, feedback, communication)
-- **Session 2 — AI With Students in the Classroom** (teacher-supervised activities, cognitive load)
-- **Session 3 — Teaching Students to Use AI Well** (AI literacy, ethics, bias, academic honesty)
+- **Session 1, AI for Your Daily Work** (planning, differentiation, rubrics, feedback, communication)
+- **Session 2, AI With Students in the Classroom** (teacher-supervised activities, cognitive load)
+- **Session 3, Teaching Students to Use AI Well** (AI literacy, ethics, bias, academic honesty)
 
 Plus:
-- **AI Toolbox** — PPS-approved AI tools for staff, plus tools under review and a compact not-approved list
-- **Free vs Paid Plans** — where student work can and can't go
-- **Policies & Templates** — downloadable, department-specific AI use policies
-- **Department Activities** — a year-long collaborative calendar
-- **Privacy & Student Data** — FERPA-friendly plain-language rules
-- **Private Chatbot (optional)** — plan for an API-driven, no-training school chatbot
+- **AI Toolbox**, PPS-approved AI tools for staff, plus tools under review and a compact not-approved list
+- **Free vs Paid Plans**, where student work can and can't go
+- **Policies & Templates**, downloadable, department-specific AI use policies
+- **Department Activities**, a year-long collaborative calendar
+- **Privacy & Student Data**, FERPA-friendly plain-language rules
+- **Private Chatbot (optional)**, plan for an API-driven, no-training school chatbot
 
 ## How to run it
 
-This is a plain static site — no build step, no dependencies. Open `index.html` in a browser,
+This is a plain static site, no build step, no dependencies. Open `index.html` in a browser,
 or serve it:
 
 ```bash
@@ -38,13 +38,13 @@ python3 -m http.server 8000
 3. In the repo → **Settings → Pages** → under "Branch," choose `main` and the `/ (root)` folder → Save.
 4. Your site will be live at `https://yourname.github.io/ai-pd-2026-27/`.
 
-That's it — it's static HTML/CSS/JS with no external dependencies, so it works on any device,
+That's it, it's static HTML/CSS/JS with no external dependencies, so it works on any device,
 including school Chromebooks.
 
 ## Customize for your school
 
 - Replace `Ida B. Wells High School` and `aansell@pps.net` in the footer and email links across all pages.
-- Review `pages/tools.html` and `pages/plans.html` — tool pricing/features change; re-verify on
+- Review `pages/tools.html` and `pages/plans.html`, tool pricing/features change; re-verify on
   official sites and update. Keep the notes in `RESEARCH-NOTES.md` current.
 - Make the department policy templates in `downloads/` your own.
 

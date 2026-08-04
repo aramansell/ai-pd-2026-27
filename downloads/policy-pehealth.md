@@ -1,4 +1,4 @@
-# Department AI Use Policy — PE / Health
+# Department AI Use Policy, PE / Health
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** PE / Health
@@ -8,7 +8,7 @@
 **Focus:** health information verification and activity design
 
 ## Our stance
-AI can help design healthy activities and explain wellness concepts, but health decisions must be based on reliable, verifiable information — not AI guesses. Never use AI for personal health advice.
+AI can help design healthy activities and explain wellness concepts, but health decisions must be based on reliable, verifiable information, not AI guesses. Never use AI for personal health advice.
 
 ## Students MAY use AI for
 - Designing workout or activity routines (under teacher guidance)

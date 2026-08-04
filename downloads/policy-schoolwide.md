@@ -1,4 +1,4 @@
-# Department AI Use Policy — School-wide (all teachers)
+# Department AI Use Policy, School-wide (all teachers)
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** School-wide (all teachers)
@@ -8,7 +8,7 @@
 **Focus:** the umbrella policy
 
 ## Our stance
-Our school believes AI should be used to support teaching and learning — never to lower the quality of thinking or put student data at risk. This policy is the umbrella; department policies add subject-specific detail.
+Our school believes AI should be used to support teaching and learning, never to lower the quality of thinking or put student data at risk. This policy is the umbrella; department policies add subject-specific detail.
 
 ## Core principles
 - AI never lowers cognitive load: it removes grunt work, never does the thinking a student (or teacher) should do.

@@ -1,4 +1,4 @@
-# Department AI Use Policy — Fine Arts / Music
+# Department AI Use Policy, Fine Arts / Music
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** Fine Arts / Music

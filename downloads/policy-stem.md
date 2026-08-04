@@ -1,4 +1,4 @@
-# Department AI Use Policy — STEM / CS / CTE
+# Department AI Use Policy, STEM / CS / CTE
 *Adapt this template to your school. Replace [bracketed] text. Review every semester.*
 
 **Department:** STEM / CS / CTE
