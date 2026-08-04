@@ -70,3 +70,6 @@ pricing, and Canva for Education free-teacher status.
 ## Design
 - Warm, modern aesthetic (teal + gold, Lora serif headings, Lato body, warm paper bg).
 - Reference site owner liked: https://diana-brewer.github.io/digital-learning-unlocked/index.html
+- NO emojis or decorative icons anywhere on the site. Owner explicitly does not want them.
+- WRITING STYLE: never use the em dash (—). It is a dead giveaway of AI writing. Use periods or
+  commas. Owner's preference, applied site-wide.
