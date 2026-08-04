@@ -102,6 +102,19 @@
  <p>Students evaluate AI output for bias or errors. AI becomes the <em>subject</em>, not the source.</p>
  </div>
  </div>
+
+ <div class="callout callout-warn">
+ <div>
+ <span class="callout-title">The trap to avoid: our AI working with their AI</span>
+ <p>
+ If we ask the AI to make a 10-question quiz, students can simply ask the same AI to complete it for them.
+ That's our AI working with their AI — nobody does the thinking. Before you assign any AI activity, ask:
+ <strong>"Could a student just hand this exact task to the AI and get a passing result?"</strong> If yes, redesign it.
+ The best activities give the <em>student</em> a thinking job the AI can't do for them — reflecting on their own
+ experience, defending their own reasoning, or interviewing someone in a role.
+ </p>
+ </div>
+ </div>
  </section>
 
  <!-- ===== ACTIVITY TEMPLATES ===== -->
@@ -117,7 +130,9 @@
  <div class="tabs" role="tablist">
  <button class="tab active" data-target="#act-editor"> Draft &amp; Edit</button>
  <button class="tab" data-target="#act-evaluate"> Evaluate the AI</button>
- <button class="tab" data-target="#act-socratic"> Socratic partner</button>
+ <button class="tab" data-target="#act-interview"> AI interviews the student</button>
+ <button class="tab" data-target="#act-roleplay"> Role-play interview</button>
+ <button class="tab" data-target="#act-socratic"> Socratic seminar</button>
  <button class="tab" data-target="#act-options"> Choose &amp; defend</button>
  <button class="tab" data-target="#act-tutor"> Explain it to me</button>
  </div>
@@ -165,15 +180,73 @@
  </div>
  </div>
 
+ <!-- AI interviews the student -->
+ <div class="tab-pane" id="act-interview">
+ <div class="card">
+ <h3>Activity — "AI interviews the student"</h3>
+ <p class="lead">The AI becomes an interactive reflection partner that asks questions tailored to each student's own project and experience — not one pre-defined set for the whole class.</p>
+ <h4 class="mt-3">Why this works</h4>
+ <ul>
+ <li>The <strong>cognitive load stays on the student</strong> — they do the reflecting, explaining, and articulating.</li>
+ <li><strong>Engagement is higher</strong> because the AI adapts to what the individual student actually did and said.</li>
+ <li>The AI's follow-up questions are <em>custom</em> to that student's experience, so the activity can't be pre-answered or copied.</li>
+ </ul>
+ <h4 class="mt-2">How it works</h4>
+ <ol>
+ <li>Set the AI up as an interviewer/reflection coach (see the prompt template below).</li>
+ <li>Students answer the AI's questions about their own project, draft, or process.</li>
+ <li>Because the questions follow <em>their</em> answers, each student's reflection is unique.</li>
+ <li>Students turn the interview into a written reflection or use it to plan their next step.</li>
+ </ol>
+ <h4 class="mt-2">Subject spin</h4>
+ <ul>
+ <li><strong>Any project:</strong> "Interview me about my project so I can reflect on what I learned and what I'd do differently."</li>
+ <li><strong>Writing:</strong> "Ask me about my essay's argument, one question at a time, so I can sharpen my thesis."</li>
+ <li><strong>Science:</strong> "Ask me about my hypothesis and my procedure so I can see where my reasoning might be weak."</li>
+ <li><strong>Lab/fieldwork:</strong> Turn it into a "debrief" that draws out the student's own observations.</li>
+ </ul>
+ <div class="callout callout-note"><div>
+ <span class="callout-title">Copy-ready prompt (for students)</span>
+ <p>"You are an interviewer and reflection coach. Ask me one question at a time about my [project / essay / lab]. Your questions should follow from what I say — dig into my thinking, ask why, and push me to be specific. Don't give me answers or do the work for me. After about 6 questions, summarize what you noticed and suggest one question for me to think about next."</p>
+ </div></div>
+ </div>
+ </div>
+
+ <!-- Role-play interview -->
+ <div class="tab-pane" id="act-roleplay">
+ <div class="card">
+ <h3>Activity — "Role-play interview"</h3>
+ <p class="lead">The AI plays a role and the learner interviews it. The student drives the questioning, so the thinking is theirs.</p>
+ <h4 class="mt-3">How it works</h4>
+ <ol>
+ <li>Set the AI up to play a character or person with specific background (see the prompt template below).</li>
+ <li>Students interview that character to gather information, test a hypothesis, or solve a problem.</li>
+ <li>Students must ask good follow-up questions to get what they need — the AI stays in character and doesn't just hand over answers.</li>
+ <li>Students synthesize what they learned into a write-up, decision, or next question.</li>
+ </ol>
+ <h4 class="mt-2">Subject spin</h4>
+ <ul>
+ <li><strong>History:</strong> Interview a historical figure or an eyewitness to an event.</li>
+ <li><strong>Science:</strong> Interview an expert witness or a patient (as in clinical reasoning), then build a diagnosis or decision.</li>
+ <li><strong>ELA:</strong> Interview a character from a novel to understand their motivations.</li>
+ <li><strong>Economics/Civics:</strong> Interview a policymaker or a business owner facing a dilemma.</li>
+ </ul>
+ <div class="callout callout-note"><div>
+ <span class="callout-title">Copy-ready prompt (for students)</span>
+ <p>"You are [character/role] with this background: [one or two sentences]. Stay in character. I'm going to interview you to [goal]. Answer based only on the background you were given — if I ask something you don't know, say so rather than making it up. Don't volunteer extra information unless I ask."</p>
+ </div></div>
+ </div>
+ </div>
+
  <!-- Socratic -->
  <div class="tab-pane" id="act-socratic">
  <div class="card">
- <h3>Activity — "Socratic partner"</h3>
- <p class="lead">AI asks questions, student answers and defends. The student does the reasoning.</p>
+ <h3>Activity — "Socratic seminar"</h3>
+ <p class="lead">The AI guides the learner through a Socratic-seminar-style lesson, asking questions that push their thinking deeper.</p>
  <h4 class="mt-3">How it works</h4>
  <ol>
- <li>Set the AI up as a coach: "Ask me one question at a time to help me deepen my thinking on [topic]. Don't give answers."</li>
- <li>Students answer each question; AI asks a deeper follow-up.</li>
+ <li>Set the AI up as a Socratic guide on a topic: "Ask me one question at a time, don't give answers."</li>
+ <li>Students answer each question; the AI asks a deeper follow-up based on their answer.</li>
  <li>Students write a short reflection on how their thinking changed.</li>
  </ol>
  <h4 class="mt-2">Subject spin</h4>
@@ -224,6 +297,84 @@
  <li>Encourage students to ask for an analogy or a real-world example.</li>
  </ul>
  </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== BRAINSTORM PROMPTS ===== -->
+ <section>
+ <p class="eyebrow">0:25–0:30 · Brainstorm your own</p>
+ <h2>Turn any task into an AI-thinking activity</h2>
+ <p class="lead mb-3">
+ The activity templates above are starting points. Use this short process to turn <em>any</em> existing lesson
+ or task into a high-cognitive-load AI activity — and to write prompts that get you there.
+ </p>
+
+ <div class="callout callout-tip">
+ <div>
+ <span class="callout-title">Frame the prompt from your role, not the AI's</span>
+ <p>
+ Instead of telling the AI "you are an expert 11th grade life science teacher, help me…", frame it as
+ <strong>"I am an 11th grade life science teacher. Help me…"</strong> It's a small change that keeps <em>you</em> —
+ and your professional judgment — as the expert in the conversation, with the AI as the assistant.
+ </p>
+ </div>
+ </div>
+
+ <h3 class="mt-3">Three moves to make any task "AI-proof" for thinking</h3>
+ <div class="grid grid-3">
+ <div class="card">
+ <h4>1. Make the student the source</h4>
+ <p>Any task where the answer depends on the <em>student's own</em> work, experience, or reasoning can't be
+ copied from AI. Turn "write a reflection on photosynthesis" into "the AI interviews you about your own
+ lab, then you turn it into a reflection."</p>
+ </div>
+ <div class="card">
+ <h4>2. Make the AI the role, not the answer</h4>
+ <p>Have the AI play someone — a witness, a patient, a character, a policymaker — and let the student
+ interview it. The student drives the questioning, so they do the thinking.</p>
+ </div>
+ <div class="card">
+ <h4>3. Make the AI a guide, not a producer</h4>
+ <p>Set the AI to ask questions one at a time (Socratic), pushing the student to explain, defend, and
+ deepen. The AI never hands over the final answer — it coaches the student toward their own.</p>
+ </div>
+ </div>
+
+ <h3 class="mt-3">A prompt-brainstorming routine for teachers</h3>
+ <ol class="steps">
+ <li>
+ <h4>Pick a task you already assign</h4>
+ <p>Bring a lesson, worksheet, or project prompt you use today.</p>
+ </li>
+ <li>
+ <h4>Ask the AI for three "thinking activity" versions</h4>
+ <p>Use a framing like: "I am an 11th grade life science teacher. Here's a task I assign: [task]. Give me
+ three ways to turn this into an activity where the AI interviews or guides the student, so the cognitive
+ load stays on the student — not on AI producing the answer. For each, give me the student-facing AI prompt."</p>
+ </li>
+ <li>
+ <h4>Run each through the "their AI" test</h4>
+ <p>For each version, ask: "Could a student hand this whole thing to the AI and pass without thinking?"
+ If yes, change it so the student must draw on their own work, experience, or reasoning.</p>
+ </li>
+ <li>
+ <h4>Pick one and test it yourself</h4>
+ <p>Play the student and run the prompt. Adjust the role, the constraints, and the "don't give answers"
+ language until the student is clearly doing the thinking.</p>
+ </li>
+ </ol>
+
+ <div class="callout callout-note">
+ <div>
+ <span class="callout-title">Copy-ready brainstorming prompt</span>
+ <p>
+ "I am a [subject] teacher for [grade]. Here is a task I currently assign: [task]. Turn it into an
+ AI-supported activity that keeps the cognitive load on the student and raises engagement. Options that
+ work well: (1) the AI interviews the student about their own work, (2) the AI plays a role the student
+ interviews, or (3) the AI guides a Socratic-style lesson. For each option, give me the student-facing
+ prompt and note what the student must think about that the AI can't do for them."
+ </p>
  </div>
  </div>
  </section>
