@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Grading results | AI Teacher Workbench{% endblock %}
+
+{% block content %}
+<div class="hero">
+  <h1>Feedback ready</h1>
+  <p class="lede">The AI drafted feedback for your students. Review it before sharing.</p>
+</div>
+
+{% if zip_download_url %}
+<div class="card result-card">
+  <h2>Download all feedback PDFs</h2>
+  <p>One PDF per student is packed into a single zip file.</p>
+  <a class="btn btn-primary" href="{{ zip_download_url }}">Download feedback-{{ zip_name }}</a>
+</div>
+{% endif %}
+
+{% if results %}
+<div class="card">
+  <h2>Graded students ({{ results | length }})</h2>
+  <table class="table">
+    <thead>
+      <tr><th>Student</th><th>Overall</th>{% if not is_hosted %}<th>PDF</th>{% endif %}</tr>
+    </thead>
+    <tbody>
+      {% for r in results %}
+      <tr>
+        <td>{{ r.student }}</td>
+        <td>{{ r.overall }}</td>
+        {% if not is_hosted %}<td><code>{{ r.pdf }}</code></td>{% endif %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% if is_hosted %}
+  <p class="small muted mt-2">
+    This is a hosted demo, so individual PDF files are not saved on the server.
+    Review the drafted feedback below as a preview of what the local version
+    exports for every student.
+  </p>
+  {% for r in results %}
+  <div class="feedback-preview">
+    <h3>{{ r.student }}</h3>
+    <p><strong>Overall:</strong> {{ r.overall }}</p>
+    <p>{{ r.feedback }}</p>
+  </div>
+  {% endfor %}
+  {% endif %}
+</div>
+{% endif %}
+
+{% if errors %}
+<div class="card">
+  <h2>Issues to fix</h2>
+  <ul>
+    {% for e in errors %}
+    <li>{{ e }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="callout callout-note mt-3">
+  <span class="callout-title">Review before sharing</span>
+  <p>
+    Open each PDF, read the feedback, edit anything you disagree with, and approve it before it
+    goes to a student. The AI is a drafting assistant, not the grader of record.
+  </p>
+</div>
+
+<div class="btn-row">
+  <a class="btn btn-ghost" href="{{ url_for('grade') }}">Grade another set</a>
+</div>
+{% endblock %}

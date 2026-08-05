@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Chat &amp; Prompts | AI Teacher Workbench{% endblock %}
+
+{% block content %}
+<div class="hero">
+  <h1>Talk to your private AI assistant</h1>
+  <p class="lede">
+    Everything runs on your own computer (or your own Ollama Cloud account). No student data
+    ever trains a model, and nothing is sent anywhere you have not chosen.
+  </p>
+
+  <!-- Provider status -->
+  <div class="status-box status-{{ 'ok' if health.ok else 'bad' }}" id="status-box" data-health-url="{{ url_for('api_status') }}">
+    <span class="status-dot"></span>
+    <span class="status-text">
+      {% if health.ok %}
+        Ready. Using {{ health.provider }} with model "{{ health.model }}".
+      {% else %}
+        Not ready: {{ health.message }} Follow the steps in <strong>SETUP.md</strong>.
+      {% endif %}
+    </span>
+    <button type="button" class="status-refresh" title="Check again">Refresh</button>
+  </div>
+</div>
+
+<div class="layout">
+  <!-- Left: chat -->
+  <section class="card panel-chat">
+    <h2>Chat</h2>
+    <div class="chat-log" id="chat-log" aria-live="polite">
+      <div class="chat-bot"><p>Hello! I am your AI teaching assistant. Ask me anything about planning, differentiation, feedback, or assessment.</p></div>
+    </div>
+    <form id="chat-form" class="chat-form">
+      <textarea id="chat-input" rows="2" placeholder="Ask the model something..." required></textarea>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <p class="small muted mt-2">Tip: keep this chat free of real student names or identifiable details. Use the Rubric Grader for student work.</p>
+  </section>
+
+  <!-- Right: prompt library -->
+  <section class="card panel-prompts">
+    <h2>Copy-paste example prompts</h2>
+    <p class="small muted">Click a prompt to load it into the chat, then fill in the [BRACKETS].</p>
+    <div class="prompt-list">
+      {% for p in prompts %}
+      <button type="button" class="prompt-card" data-prompt-id="{{ p.id }}">
+        <span class="prompt-tag">{{ p.tag }}</span>
+        <span class="prompt-title">{{ p.title }}</span>
+        <span class="prompt-uses-upload {% if not p.uses_upload %}is-hidden{% endif %}">uses file upload</span>
+      </button>
+      {% endfor %}
+    </div>
+    <div class="prompt-detail" id="prompt-detail" hidden>
+      <h3 id="pd-title"></h3>
+      <p class="small" id="pd-hint"></p>
+      <textarea id="pd-text" rows="8" readonly></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" id="pd-copy">Copy</button>
+        <button type="button" class="btn btn-primary" id="pd-load">Load into chat</button>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  window.PROMPTS = {{ prompts | tojson }};
+</script>
+{% endblock %}

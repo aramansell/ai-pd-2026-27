@@ -465,9 +465,33 @@ h3 { font-size: var(--fs-h3); margin: 24px 0 10px; }
 }
 
 /* ==========================================================================
+   Code blocks (used on the AI Teacher Workbench page)
+   ========================================================================== */
+pre.code-block {
+  background: #0F5257;         /* deep teal, readable light text */
+  color: #EAF4F3;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 10px 0;
+}
+code {
+  background: var(--surface-alt);
+  color: var(--primary-dark);
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.9em;
+}
+
+/* ==========================================================================
    Print — so teachers can print session handouts
    ========================================================================== */
-
 @media print {
   .site-header, .site-footer, .nav-toggle { display: none !important; }
   body { background: #fff; }

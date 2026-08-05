@@ -1,0 +1,23 @@
+Criterion 1: Voice
+  Exceeding: Vivid, personal, and distinctive writing voice throughout.
+  Meeting: Clear and personal voice, with some personality.
+  Approaching: Voice is present but flat or inconsistent.
+  Not yet: No clear voice; writing feels mechanical.
+
+Criterion 2: Details
+  Exceeding: Specific, sensory details that bring the experience to life.
+  Meeting: Some specific details that support the main idea.
+  Approaching: Details are vague or general.
+  Not yet: No supporting details.
+
+Criterion 3: Structure
+  Exceeding: Clear, effective beginning, middle, and end that build.
+  Meeting: Organized and follows a logical sequence.
+  Approaching: Somewhat disorganized or hard to follow.
+  Not yet: No clear structure.
+
+Criterion 4: Reflection
+  Exceeding: Thoughtful reflection on why the experience mattered.
+  Meeting: Some reflection on the experience.
+  Approaching: Reflection is minimal or surface-level.
+  Not yet: No reflection.

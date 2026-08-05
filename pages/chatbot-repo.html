@@ -3,8 +3,8 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Build a Private School Chatbot (Optional) | AI in Education</title>
- <meta name="description" content="A step-by-step plan to build your own private, API-driven school chatbot that never trains on student data. Optional advanced project for tech-minded teachers.">
+ <title>AI Teacher Workbench: Download and Run It Yourself | AI in Education</title>
+ <meta name="description" content="A free, private, local AI workspace for teachers. Download the repo, run it on your own computer with Ollama (free, offline) or Ollama Cloud, and grade student work with a rubric into feedback PDFs. Step-by-step setup for Windows, macOS, and Linux.">
  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,172 +34,466 @@
 
  <div class="pd-hero">
  <div class="container">
- <span class="pd-number">OPTIONAL · ADVANCED PROJECT</span>
- <h1>Build a private, API-driven school chatbot</h1>
+ <span class="pd-number">OPTIONAL · DOWNLOADABLE TOOL</span>
+ <!-- ======================================================================
+   REPO + LIVE DEMO LINKS - EDIT THESE TWO URLS
+   ------------------------------------------------------------------------
+   REPO_URL : GitHub URL where the AI Teacher Workbench repo is hosted.
+              Used by the "Download the repo" buttons below.
+   DEMO_URL : URL of the deployed live demo (e.g. your-app.vercel.app).
+              Used by the "Open the live demo" button.
+   ======================================================================= -->
+ <h1>AI Teacher Workbench</h1>
  <p class="lede">
- Want a chatbot that <strong>never trains on student data</strong> and lives entirely under your
- school's control? This optional project builds one using an API key, no student data ever leaves
- your system, and nothing trains a model. Great for tech-minded teachers or a club.
+ A free, private AI workspace you run on <strong>your own computer</strong>. Chat with an AI
+ assistant, and grade a class set of student work against your rubric into a
+ feedback PDF for every student. Nothing leaves your machine unless you choose
+ the cloud option, and no student data ever trains a model.
  </p>
  <div class="pd-meta">
- <span class="meta-pill"> No training</span>
- <span class="meta-pill"> API-driven</span>
- <span class="meta-pill"> Cloneable repo</span>
- <span class="meta-pill"> Advanced</span>
+ <span class="meta-pill"> Free with Ollama</span>
+ <span class="meta-pill"> Works offline</span>
+ <span class="meta-pill"> Windows · macOS · Linux</span>
+ <span class="meta-pill"> All config in one .env</span>
+ </div>
+ <div class="btn-row" style="margin-top:18px;">
+ <a class="btn btn-primary" href="https://github.com/YOUR-USER/ai-teacher-workbench" target="_blank" rel="noopener">Download the repo →</a>
+ <a class="btn btn-ghost" href="#setup-steps">See the setup steps</a>
  </div>
  </div>
  </div>
 
  <main class="container">
 
- <!-- ===== WHY ===== -->
+ <!-- ===== LIVE DEMO ===== -->
  <section>
- <p class="eyebrow">Why build your own?</p>
- <h2>Why a private chatbot is worth considering</h2>
- <div class="grid grid-2">
- <div class="callout callout-ok"><div><span class="callout-title">Privacy by design</span><p>An API call doesn't train the model on your input. Your conversation isn't added to anyone's training set.</p></div>
+ <p class="eyebrow">Try it first</p>
+ <h2>See it working without installing anything</h2>
+ <p class="lead mb-3">
+ We host a public demo so you can click around before you decide to run your own copy.
+ The demo uses a cloud model, so uploads are not saved to disk there. The downloadable
+ version on your computer exports a PDF for every student.
+ </p>
+ <div class="callout callout-ok"><div><span class="callout-title">Try the live demo</span><p>
+ <a class="btn btn-primary" href="https://YOUR-DEMO.vercel.app/" target="_blank" rel="noopener">Open the live demo →</a>
+ <span class="muted">(link goes live once the hosted copy is deployed)</span>
+ </p></div></div>
+ </section>
+
+ <!-- ===== WHAT IT DOES ===== -->
+ <section>
+ <p class="eyebrow">What you get</p>
+ <h2>Three tools in one private workspace</h2>
+ <div class="grid grid-3">
+ <div class="card">
+ <h3>Private chat</h3>
+ <p>A chat assistant for lesson planning, differentiation, assessment, communication, and more. Your conversation stays on your computer.</p>
  </div>
- <div class="callout callout-ok"><div><span class="callout-title">You control it</span><p>It's your code, your account, your rules. No surprise policy changes.</p></div>
+ <div class="card">
+ <h3>Prompt library</h3>
+ <p>Copy-paste example prompts, each with <code>[BRACKETS]</code> to fill in. Load one and go.</p>
  </div>
- <div class="callout callout-tip"><div><span class="callout-title">A learning opportunity</span><p>Building it is a fantastic way to teach students how AI actually works under the hood.</p></div>
+ <div class="card">
+ <h3>Rubric Grader</h3>
+ <p>Paste a rubric, upload a folder of student work, and get a feedback PDF per student, packed into one download.</p>
  </div>
- <div class="callout callout-warn"><div><span class="callout-title">Not for everyone</span><p>This requires some technical comfort. If that's not you, skip it. The web tools in the <a href="tools.html">Toolbox</a> are plenty.</p></div>
+ </div>
+ <div class="callout callout-warn"><div><span class="callout-title">The one rule</span><p>
+ AI drafts. A human teacher reads, edits, and approves everything before it reaches a student.
+ This tool is a helper, never the grade of record.
+ </p></div></div>
+ </section>
+
+ <!-- ===== EXAMPLE PROMPTS ===== -->
+ <section>
+ <p class="eyebrow">Copy-paste ready</p>
+ <h2>Example prompts to get you started</h2>
+ <p class="lead mb-3">
+ These ship inside the app and can be loaded with one click. Each is a self-contained prompt
+ with <code>[BRACKETS]</code> where you add your specifics.
+ </p>
+
+ <div data-tabs class="mt-3">
+ <div class="tabs" role="tablist">
+ <button class="tab active" data-target="#ex-rubric"> Grade a class set</button>
+ <button class="tab" data-target="#ex-lesson"> Lesson plan</button>
+ <button class="tab" data-target="#ex-feedback"> One writing feedback</button>
+ <button class="tab" data-target="#ex-diff"> Differentiate</button>
+ <button class="tab" data-target="#ex-rubricwrite"> Write a rubric</button>
+ <button class="tab" data-target="#ex-quiz"> Build a quiz</button>
+ <button class="tab" data-target="#ex-email"> Parent email</button>
+ </div>
+
+ <div class="tab-pane active" id="ex-rubric">
+ <div class="card">
+ <h3>Grade a whole class set with your rubric</h3>
+ <p class="lead">Use this with the Rubric Grader tool: paste it in, upload your rubric and student files, and it writes a feedback PDF for every student.</p>
+ <pre class="code-block small">You are an experienced, fair, and supportive teacher. I am going to give
+you a rubric and a folder of student work. Grade EVERY student against the
+SAME rubric. For each student, return: (1) a score or level for each rubric
+criterion, (2) an overall score, and (3) one or two paragraphs of specific,
+encouraging feedback that tells the student exactly what they did well and
+the one or two things to work on next. Be honest and do not inflate scores
+to be kind. If the work is incomplete or does not address the prompt, say so
+plainly. Write feedback in the student's voice level and respect their
+dignity. Never claim the student wrote something they did not. You are
+drafting feedback for a human teacher to review before it goes to the student.</pre>
+ <a class="btn btn-ghost" href="grade">Open the Rubric Grader</a>
+ </div>
+ </div>
+
+ <div class="tab-pane" id="ex-lesson">
+ <div class="card">
+ <h3>Write a lesson plan from a standard</h3>
+ <pre class="code-block small">You are an expert curriculum designer for [GRADE] [SUBJECT]. Design a
+complete 50-minute lesson for this standard: [PASTE STANDARD]. Include:
+(1) a clear, measurable learning objective; (2) a 5-minute opening hook
+that builds curiosity; (3) 15 minutes of direct instruction with concrete
+examples and non-examples; (4) a 15-minute guided or independent practice
+activity where students DO the thinking (not just watch); (5) a 5-minute
+formative check for understanding; and (6) a 5-minute closing and exit
+ticket. Differentiate for a student who struggles and a student who is
+ready for a stretch. Keep cognitive load low: one clear idea per step. Do
+not invent facts or sources. Format the plan with clear headings I can
+copy into my planner.</pre>
+ </div>
+ </div>
+
+ <div class="tab-pane" id="ex-feedback">
+ <div class="card">
+ <h3>Draft feedback for one student's writing</h3>
+ <pre class="code-block small">You are a supportive writing teacher. Here is a piece of student writing:
+[PASTE WRITING]. Write honest, specific feedback that (1) names two things
+the student did well with specific examples from their text, (2) names ONE
+most important thing to improve, with a concrete strategy, and (3) ends on
+an encouraging note. Keep it to about 150 words. Match the tone to a
+respectful peer coach, not a judge. Do not invent praise or point to things
+that are not in the text. This is a draft for me to edit before sharing.</pre>
+ </div>
+ </div>
+
+ <div class="tab-pane" id="ex-diff">
+ <div class="card">
+ <h3>Differentiate an assignment for three readiness levels</h3>
+ <pre class="code-block small">Here is an assignment: [PASTE ASSIGNMENT]. Create three versions for the
+same learning goal: (A) Support level, for a student who needs more
+scaffolding and a smaller cognitive load; (B) Core level, the standard
+version; and (C) Stretch level, for a student ready for deeper challenge.
+Keep the core learning goal and the assessment of it the same across all
+three, so the versions stay fair. For each version, state what stays the
+same and what changes and why. Do not lower the bar for the support
+version, just change the path. Present the three versions with clear
+headings.</pre>
+ </div>
+ </div>
+
+ <div class="tab-pane" id="ex-rubricwrite">
+ <div class="card">
+ <h3>Turn a vague assignment into a clear rubric</h3>
+ <pre class="code-block small">You are an expert in standards-based grading. Here is an assignment or
+learning goal: [PASTE ASSIGNMENT]. Build a clear, usable rubric with 3 to 5
+criteria. For each criterion, give 4 performance levels with descriptions
+written in language a student can understand: Exceeding, Meeting,
+Approaching, and Not yet. Make each level description specific and
+observable, not vague adjectives. Then add a one-line note on how I might
+give useful feedback when a student lands at each level. Do not invent
+standards or requirements beyond what I gave you.</pre>
+ </div>
+ </div>
+
+ <div class="tab-pane" id="ex-quiz">
+ <div class="card">
+ <h3>Build a quiz from your notes or a chapter</h3>
+ <pre class="code-block small">You are a test writer for [GRADE] [SUBJECT]. Using the material below,
+create a 10-question assessment: 4 multiple-choice questions, 3 short-answer
+questions, 2 application questions that ask students to use the idea in a
+new situation, and 1 question that asks students to explain their reasoning.
+Provide an answer key for the multiple choice and a rubric-style answer key
+for the constructed responses. Keep language clear and fair, avoid trick
+questions, and make sure every question is answerable from the material I
+give you. Here is the material: [PASTE NOTES OR CHAPTER].</pre>
+ </div>
+ </div>
+
+ <div class="tab-pane" id="ex-email">
+ <div class="card">
+ <h3>Write a parent email that is warm and clear</h3>
+ <pre class="code-block small">You are a warm, professional teacher writing to a parent. Draft a short
+email (under 180 words) that: (1) opens with a positive, specific
+observation about the student, (2) states one area for growth honestly but
+kindly, (3) proposes a next step and invites partnership, and (4) ends with
+warmth and an open door. Fill in these details: student [NAME], subject
+[SUBJECT], the positive [OBSERVATION], the concern [CONCERN], and the
+suggested next step [NEXT STEP]. Do not invent information I did not give
+you. Write in a voice I can send after light editing. Offer 2 slightly
+different openings and let me pick.</pre>
+ </div>
  </div>
  </div>
  </section>
 
- <!-- ===== THE PLAN ===== -->
+ <!-- ===== THE APPROACH ===== -->
  <section>
- <p class="eyebrow">The plan</p>
- <h2>How to build it, step by step</h2>
+ <p class="eyebrow">Two ways to run it</p>
+ <h2>Choose your AI engine</h2>
+ <div class="grid grid-2">
+ <div class="card">
+ <h3>Local Ollama: free and offline</h3>
+ <p>Ollama runs on your computer. Nothing leaves the machine. This is the strongest privacy option and costs nothing.</p>
+ <ul>
+ <li>Install the Ollama app, pull a small model.</li>
+ <li>Fast, private, works without internet.</li>
+ <li>Best for a school computer or a classroom.</li>
+ </ul>
+ </div>
+ <div class="card">
+ <h3>Ollama Cloud: works without installing a model</h3>
+ <p>Connect your free Ollama Cloud account with an API key. No model download, easy setup, works on any machine.</p>
+ <ul>
+ <li>Free tier available; you set your own budget.</li>
+ <li>Needs internet and an account.</li>
+ <li>Great way to start, or to put a public demo online.</li>
+ </ul>
+ </div>
+ </div>
+ <div class="callout callout-tip"><div><span class="callout-title">Recommendation</span><p>
+ Start with <strong>Ollama Cloud</strong> if you want the fastest setup. Use <strong>local Ollama</strong>
+ if you want the strongest privacy or you are often offline. You can switch later by changing
+ one line in the <code>.env</code> file.
+ </p></div></div>
+ </section>
+
+ <!-- ===== GET THE FILES ===== -->
+ <section id="setup-steps">
+ <p class="eyebrow">Step 1 · Get the files</p>
+ <h2>Download or clone the repository</h2>
+ <p class="lead mb-3">The whole app lives in one folder. You can clone it with git, or download it as a zip.</p>
+ <div class="grid grid-2">
+ <div class="card">
+ <h3>Download the zip</h3>
+ <ol class="small">
+ <li>Go to the repository page on GitHub.</li>
+ <li>Click the green <strong>Code</strong> button.</li>
+ <li>Choose <strong>Download ZIP</strong>.</li>
+ <li>Unzip it into a folder you can find.</li>
+ </ol>
+ </div>
+ <div class="card">
+ <h3>Or clone with git</h3>
+ <pre class="code-block small">git clone https://github.com/YOUR-USER/ai-teacher-workbench.git ai-workbench
+cd ai-workbench</pre>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== INSTALL PYTHON ===== -->
+ <section>
+ <p class="eyebrow">Step 2 · Install Python</p>
+ <h2>Install Python (one time, all systems)</h2>
+ <p>The app is written in Python. You need Python 3.9 or newer. It is free.</p>
+ <div data-tabs class="mt-3">
+ <div class="tabs" role="tablist">
+ <button class="tab active" data-target="#py-win"> Windows</button>
+ <button class="tab" data-target="#py-mac"> macOS</button>
+ <button class="tab" data-target="#py-lin"> Linux</button>
+ </div>
+ <div class="tab-pane active" id="py-win">
+ <div class="card">
+ <h3>Windows</h3>
+ <ol>
+ <li>Go to <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org/downloads</a> and download the installer.</li>
+ <li>Run it. On the first screen, <strong>tick the box "Add Python to PATH"</strong>. This is essential.</li>
+ <li>Click Install Now.</li>
+ </ol>
+ <div class="callout callout-warn"><div><p>If you skip "Add Python to PATH", the setup script will not find Python. Reinstall and tick the box.</p></div></div>
+ </div>
+ </div>
+ <div class="tab-pane" id="py-mac">
+ <div class="card">
+ <h3>macOS</h3>
+ <ol>
+ <li>Go to <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org/downloads</a>.</li>
+ <li>Download the macOS installer and run it.</li>
+ <li>Follow the prompts to install.</li>
+ </ol>
+ </div>
+ </div>
+ <div class="tab-pane" id="py-lin">
+ <div class="card">
+ <h3>Linux (Ubuntu / Debian)</h3>
+ <p>Open a terminal and run:</p>
+ <pre class="code-block small">sudo apt update
+sudo apt install python3 python3-venv python3-pip</pre>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== GET AN AI ENGINE ===== -->
+ <section>
+ <p class="eyebrow">Step 3 · Pick your AI engine</p>
+ <h2>Set up Ollama (local) or Ollama Cloud</h2>
+ <div data-tabs class="mt-3">
+ <div class="tabs" role="tablist">
+ <button class="tab active" data-target="#ai-local"> Local Ollama (free, offline)</button>
+ <button class="tab" data-target="#ai-cloud"> Ollama Cloud (free key)</button>
+ </div>
+
+ <div class="tab-pane active" id="ai-local">
+ <div class="card">
+ <h3>Local Ollama, free and fully offline</h3>
+ <ol>
+ <li>Go to <a href="https://ollama.com/download" target="_blank" rel="noopener">ollama.com/download</a> and install the app for your system.</li>
+ <li>Open a terminal (Command Prompt on Windows, Terminal on macOS/Linux) and pull a small model:</li>
+ </ol>
+ <pre class="code-block small">ollama pull llama3.2</pre>
+ <p class="small muted">Leave the Ollama app running. It works in the background. Other good small models: <code>qwen2.5</code>, <code>gemma2</code>, <code>llama3.1</code>. A powerful computer can run <code>llama3.3</code> or <code>mistral</code>.</p>
+ </div>
+ </div>
+
+ <div class="tab-pane" id="ai-cloud">
+ <div class="card">
+ <h3>Ollama Cloud, free tier or paid</h3>
+ <ol>
+ <li>Go to <a href="https://ollama.com/signup" target="_blank" rel="noopener">ollama.com/signup</a> and create a free account.</li>
+ <li>In your dashboard, create an <strong>API key</strong>.</li>
+ <li>Copy the key. You will paste it into the <code>.env</code> file in the next step.</li>
+ </ol>
+ <p class="small muted">Ollama Cloud has a free tier. You can set your own budget in the dashboard. The app never spends anything unless you point it at your key.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== ONE-TIME SETUP ===== -->
+ <section>
+ <p class="eyebrow">Step 4 · Run the one-time setup</p>
+ <h2>Install the app (first time only)</h2>
+ <p class="lead mb-3">
+ The setup script creates a private Python environment and installs the few libraries it needs.
+ It also creates your <code>.env</code> file from a template.
+ </p>
+ <div data-tabs class="mt-3">
+ <div class="tabs" role="tablist">
+ <button class="tab active" data-target="#st-win"> Windows</button>
+ <button class="tab" data-target="#st-mac"> macOS / Linux</button>
+ </div>
+ <div class="tab-pane active" id="st-win">
+ <div class="card">
+ <h3>Windows</h3>
+ <p>Double-click <code>setup.bat</code>, or open Command Prompt in the folder and run:</p>
+ <pre class="code-block small">setup.bat</pre>
+ </div>
+ </div>
+ <div class="tab-pane" id="st-mac">
+ <div class="card">
+ <h3>macOS / Linux</h3>
+ <p>Open Terminal in the folder and run:</p>
+ <pre class="code-block small">chmod +x setup.sh run.sh
+./setup.sh</pre>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== CONFIGURE .env ===== -->
+ <section>
+ <p class="eyebrow">Step 5 · Configure</p>
+ <h2>Everything lives in one .env file</h2>
+ <p class="lead mb-3">
+ Open the <code>.env</code> file in any text editor. It is a simple list of <code>NAME=value</code> lines.
+ This one file controls everything.
+ </p>
+ <div class="grid grid-2">
+ <div class="card">
+ <h3>For local Ollama</h3>
+ <p>Make sure the first line reads:</p>
+ <pre class="code-block small">PROVIDER=ollama</pre>
+ <p class="small muted">That is it. Leave the API key blank.</p>
+ </div>
+ <div class="card">
+ <h3>For Ollama Cloud</h3>
+ <p>Change the first line and add your key:</p>
+ <pre class="code-block small">PROVIDER=cloud
+OLLAMA_API_KEY=your-key-here</pre>
+ </div>
+ </div>
+ <div class="callout callout-warn"><div><span class="callout-title">Keep your key private</span><p>
+ The <code>.env</code> file is automatically ignored by git, so your key is never committed.
+ Never rename it, and never paste your key into a chat, email, or shared file.
+ </p></div></div>
+ </section>
+
+ <!-- ===== START ===== -->
+ <section>
+ <p class="eyebrow">Step 6 · Start the app</p>
+ <h2>Run it and open it in your browser</h2>
+ <div data-tabs class="mt-3">
+ <div class="tabs" role="tablist">
+ <button class="tab active" data-target="#run-win"> Windows</button>
+ <button class="tab" data-target="#run-mac"> macOS / Linux</button>
+ </div>
+ <div class="tab-pane active" id="run-win">
+ <div class="card">
+ <p>Double-click <code>run.bat</code>, or run:</p>
+ <pre class="code-block small">run.bat</pre>
+ </div>
+ </div>
+ <div class="tab-pane" id="run-mac">
+ <div class="card">
+ <p>Run:</p>
+ <pre class="code-block small">./run.sh</pre>
+ </div>
+ </div>
+ </div>
+ <p class="lead mt-3">Open <strong>http://localhost:5000</strong> in your browser. You will see the workbench with a status box that tells you whether your AI engine is ready.</p>
+ <div class="callout callout-tip"><div><span class="callout-title">If it says "Not ready"</span><p>
+ Local Ollama: the Ollama app must be running, and the model must be pulled (<code>ollama pull llama3.2</code>).
+ Cloud: the API key is missing or wrong in <code>.env</code>.
+ </p></div></div>
+ </section>
+
+ <!-- ===== RUBRIC GRADER HOW-TO ===== -->
+ <section>
+ <p class="eyebrow">Put it to work</p>
+ <h2>Grade a class set with the Rubric Grader</h2>
  <ol class="steps">
- <li>
- <h4>Decide the approach</h4>
- <p>
- Two options: <strong>(a) Local + free</strong> using Ollama (open-source models on a school
- computer, fully offline, $0), or <strong>(b) Cloud API</strong> using a paid API key from
- OpenAI/Anthropic/Google (higher quality, small per-use cost, still no training on your data).
- </p>
- </li>
- <li>
- <h4>Set up a GitHub repository</h4>
- <p>
- Create a repo (e.g., <code>school-chatbot</code>). Keep it private if it contains school
- specifics. This is the repo teachers (or students) can clone to run their own copy.
- </p>
- </li>
- <li>
- <h4>Choose the interface</h4>
- <p>
- A simple web page (HTML + a few lines of JavaScript) that talks to the model. Keep it minimal. The point is a working tool, not a fancy app.
- </p>
- </li>
- <li>
- <h4>Add your API key (cloud option) or Ollama (local)</h4>
- <p>
- For cloud: store the API key in a private environment variable, <strong>never</strong> commit it to
- the repo or put it in the HTML. For local: run Ollama on the school computer and point the page at it.
- </p>
- </li>
- <li>
- <h4>Write a clear README</h4>
- <p>
- So a colleague (or future you) can clone and run it in minutes. Include setup, the privacy note,
- and any costs.
- </p>
- </li>
- <li>
- <h4>Test with teachers, then students</h4>
- <p>
- Pilot with a small group first. Keep a human reviewing what it produces before it's used widely.
- </p>
- </li>
+ <li><h4>Open the Rubric Grader tab</h4><p>It is the second tab at the top of the app.</p></li>
+ <li><h4>Paste your rubric</h4><p>A rubric with criteria and performance levels works best, for example: "Criterion 1: Thesis. Exceeding: a clear, arguable, insightful thesis. Meeting: clear and arguable. Approaching: present but vague. Not yet: no thesis." Repeat for each criterion.</p></li>
+ <li><h4>Upload one file per student</h4><p>Name each file with the student's name, such as <code>jamie-smith.docx</code>. Supported: PDF, Word (.docx), plain text (.txt), Markdown (.md), CSV (.csv).</p></li>
+ <li><h4>Generate feedback PDFs</h4><p>The app reads each file, scores it against the rubric, and writes a feedback PDF per student into the output folder, offered as one download.</p></li>
+ <li><h4>Review every PDF</h4><p>Open each one, edit anything you disagree with, and approve it before it goes to a student. The AI is a drafting assistant, not the grader of record.</p></li>
  </ol>
  </section>
 
- <!-- ===== SAMPLE ===== -->
+ <!-- ===== PRIVACY ===== -->
  <section>
- <p class="eyebrow">A working example</p>
- <h2>A minimal HTML chatbot (stub you can extend)</h2>
- <p class="lead mb-3">
- This is a simplified starting point. In a real setup you'd call the model's API from a small backend
- so your key isn't exposed in the browser. This stub shows the shape.
- </p>
- <div class="callout callout-warn"><div><span class="callout-title">Security first</span><p>Never put a real API key in a web page teachers/students open. Route calls through a small server or serverless function that holds the key.</p></div>
- </div>
- <div class="card">
- <pre class="small" style="overflow-x:auto; background:#0f172a; color:#e2e8f0; padding:16px; border-radius:8px;">
-&lt;!-- chat.html (conceptual stub) -->
-&lt;form id="chat">
- &lt;label>Your question:&lt;/label>
- &lt;input id="q" placeholder="Ask the model...">
- &lt;button>Ask&lt;/button>
-&lt;/form>
-&lt;pre id="out"></pre>
-&lt;script>
- // In production, this calls YOUR backend, which holds the API key.
- // The key must NEVER live in this file.
- const out = document.getElementById("out");
- document.getElementById("chat").addEventListener("submit", async (e) => {
- e.preventDefault();
- const q = document.getElementById("q").value;
- out.textContent = "Thinking...";
- const res = await fetch("/api/ask", { // your backend endpoint
- method: "POST",
- headers: { "Content-Type": "application/json" },
- body: JSON.stringify({ question: q })
- });
- const data = await res.json();
- out.textContent = data.answer;
- });
-&lt;/script></pre>
- <p class="small muted mt-2">The backend (<code>/api/ask</code>) is where you add the real model call and hold your key securely.</p>
- </div>
- </section>
-
- <!-- ===== PRIVACY & COST ===== -->
- <section>
- <p class="eyebrow">The details</p>
- <h2>Privacy &amp; cost at a glance</h2>
+ <p class="eyebrow">Privacy &amp; safety</p>
+ <h2>Where your data goes</h2>
  <div class="grid grid-2">
  <div class="card">
- <h3> Privacy</h3>
- <p>
- API calls are generally <strong>not used to train models</strong> (that's the whole point of the
- paid API). Still, don't paste student PII, keep it to lesson content, not identifiable info.
- For the strongest privacy, use <strong>Ollama locally</strong> so nothing leaves the machine at all.
- </p>
+ <h3>Local Ollama</h3>
+ <p>Everything stays on your device. Nothing leaves the machine. This is the strongest privacy option.</p>
  </div>
  <div class="card">
- <h3> Cost</h3>
- <p>
- <strong>Ollama:</strong> $0 (free, open source). <strong>Cloud API:</strong> small per-use fees
- (a few cents per conversation typically, depending on the model). Free credits are often available
- for first-time API users. Set a hard monthly budget in the API dashboard.
- </p>
+ <h3>Ollama Cloud</h3>
+ <p>Your prompts are sent to Ollama's API. Ollama does not train on API data, but content leaves your device, so keep it to lesson content, not unnecessary student PII.</p>
  </div>
  </div>
- </section>
-
- <!-- ===== WHEN TO SKIP ===== -->
- <section>
- <p class="eyebrow">Honest advice</p>
- <h2>When should you <em>not</em> build this?</h2>
- <div class="callout callout-tip"><div>
- <span class="callout-title">You probably don't need it</span>
- <p>
- For most schools, the <strong>free, school-approved tools</strong> in the <a href="tools.html">Toolbox</a>
- are more than enough. Build a private chatbot only if you (a) want total control, (b) have a
- technical champion, or (c) want it as a <em>learning project</em> for staff or students. It's a
- great "stretch goal," not a requirement.
- </p>
- </div>
- </div>
+ <div class="callout callout-warn"><div><span class="callout-title">Student data</span><p>
+ Never paste real student names, grades, medical info, or other personally identifying
+ information beyond what the assignment itself needs. The district AI policy still applies:
+ confirm any tool against your school or district approved-software list before use.
+ </p></div></div>
+ <div class="callout callout-note"><div><p>
+ AI can be biased and can be wrong. Every output you give a student or family must be
+ reviewed by you. You are responsible for the final feedback.
+ </p></div></div>
  </section>
 
  <div class="btn-row">
- <a class="btn btn-primary" href="resources.html">Get more resources →</a>
- <a class="btn btn-ghost" href="plans.html">Review the plans first</a>
+ <a class="btn btn-primary" href="https://github.com/YOUR-USER/ai-teacher-workbench" target="_blank" rel="noopener">Download the repo →</a>
+ <a class="btn btn-ghost" href="tools.html">Back to the AI Toolbox</a>
  </div>
 
  </main>
@@ -231,7 +525,7 @@
  </ul>
  </div>
  </div>
- <p class="disclaimer">Code is a conceptual stub for learning, not production-ready. Verify security before any live use. © <span data-year>2026</span> Ida B. Wells High School.</p>
+ <p class="disclaimer">Built for professional development. Tool pricing and features change often, always verify on the provider's official site before relying on it. "AI in Education" is not affiliated with any tool vendor. © <span data-year>2026</span> Ida B. Wells High School.</p>
  </div>
  </footer>
 
