@@ -261,7 +261,12 @@
  </ul>
  <div class="callout callout-note"><div>
  <span class="callout-title">Copy-ready prompt (for students)</span>
- <p>"You are an interviewer and reflection coach. Ask me one question at a time about my [project / essay / lab]. Your questions should follow from what I say, dig into my thinking, ask why, and push me to be specific. Don't give me answers or do the work for me. After about 6 questions, summarize what you noticed and suggest one question for me to think about next."</p>
+ <p>"You are an interviewer and reflection coach. Ask me one question at a time about my [project / essay
+ / lab / writing]. Your questions must follow from what I say, dig into my thinking, ask why, and push me
+ to be specific. Do not give me answers and do not do the work for me. Keep each question short and
+ answerable in a few sentences. After about 6 questions, summarize in a few sentences what you noticed
+ about my thinking, and suggest one question for me to think about next. Never use em dashes. Do not use
+ bullet points or numbered lists, just ask your questions in plain sentences."</p>
  </div></div>
  </div>
  </div>
@@ -287,7 +292,11 @@
  </ul>
  <div class="callout callout-note"><div>
  <span class="callout-title">Copy-ready prompt (for students)</span>
- <p>"You are [character/role] with this background: [one or two sentences]. Stay in character. I'm going to interview you to [goal]. Answer based only on the background you were given, if I ask something you don't know, say so rather than making it up. Don't volunteer extra information unless I ask."</p>
+ <p>"You are [character/role] with this background: [one or two sentences]. Stay in character the whole
+ time. I am going to interview you to [goal]. Answer only based on the background you were given, if I ask
+ something you do not know, say so rather than making it up. Do not volunteer extra information unless I
+ ask. Keep your answers short and in character. Never use em dashes. Do not use bullet points or numbered
+ lists, just answer in plain sentences."</p>
  </div></div>
  </div>
  </div>
@@ -405,7 +414,8 @@
  <h4>Ask the AI for three "thinking activity" versions</h4>
  <p>Use a framing like: "I am an 11th grade life science teacher. Here's a task I assign: [task]. Give me
  three ways to turn this into an activity where the AI interviews or guides the student, so the cognitive
- load stays on the student, not on AI producing the answer. For each, give me the student-facing AI prompt."</p>
+ load stays on the student, not on AI producing the answer. For each, give me the student-facing AI prompt
+ and note exactly what thinking job the student must do that the AI can't do for them."</p>
  </li>
  <li>
  <h4>Run each through the "their AI" test</h4>
@@ -423,11 +433,28 @@
  <div>
  <span class="callout-title">Copy-ready brainstorming prompt</span>
  <p>
- "I am a [subject] teacher for [grade]. Here is a task I currently assign: [task]. Turn it into an
- AI-supported activity that keeps the cognitive load on the student and raises engagement. Options that
- work well: (1) the AI interviews the student about their own work, (2) the AI plays a role the student
- interviews, or (3) the AI guides a Socratic-style lesson. For each option, give me the student-facing
- prompt and note what the student must think about that the AI can't do for them."
+ "I am a [subject] teacher for [grade level]. I teach about [number] students. Here is a task I
+ currently assign: [paste the full task]. Turn it into an AI-supported classroom activity that
+ keeps the cognitive load on the student and raises engagement.<br><br>
+ Three options that work well are: the AI interviews the student about their own work, the AI
+ plays a role the student interviews, or the AI guides a Socratic-style lesson. Give me all
+ three options for this task. For each option, give me the student-facing AI prompt, the exact
+ setup you would use, and a note on what thinking job the student must do that the AI cannot do
+ for them.<br><br>
+ Then tell me which option you recommend for [grade] and why, and describe how the student's
+ finished work should be turned in so I can grade the thinking, not the AI's output.<br><br>
+ Output rules, apply these to everything you produce for me:<br>
+ Output one complete, standalone HTML document with proper tags and a &lt;style&gt; section. No
+ markdown, no code fences.<br>
+ Present the three options one after another under clear headings, with the student-facing
+ prompt for each in a distinct block I can copy. Use short sentences, no filler. Style it to
+ print cleanly to PDF on letter-size paper.<br>
+ Hard rule: never use em dashes. Use periods or commas.<br>
+ Hard rule: no bullet points or numbered lists unless I ask for them.<br>
+ At the very end, in plain text just before the HTML, add one line telling me how to use the
+ result. Use the words: 'Open this HTML file in your browser, then choose File, Print, Save as
+ PDF. You can also copy any single student-facing prompt from the HTML and paste it into your
+ tool.'"
  </p>
  </div>
  </div>

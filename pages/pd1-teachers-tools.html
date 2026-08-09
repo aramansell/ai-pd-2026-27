@@ -162,6 +162,25 @@
  Choose any <strong>three</strong> of the workflows below. Each one gives you a copy-ready prompt.
  During the session, try at least one live in the tool of your choice (<a href="tools.html">see the Toolbox</a>).
  </p>
+ <div class="callout callout-tip"><div>
+ <span class="callout-title">Universal output rules, built into every prompt</span>
+ <p>
+ Every prompt below asks the AI to return <strong>a standalone, print-ready HTML document</strong>
+ instead of markdown. That way you can open the file in any browser, print it to a PDF, or paste
+ it straight into Canvas, Google Docs, or a class page, no extra formatting needed. The rules
+ baked into each prompt are: no em dashes (ever), no bullet lists unless you ask for them, use
+ headings and short sentences, use tables when the data is column-like, and style for clean
+ letter-size printing. If a format other than HTML fits better, the prompt says so and offers
+ the alternative.
+ </p>
+ <p class="mt-1"><strong>How to turn the HTML into a PDF, the short version:</strong> when the AI
+ returns the HTML, copy it into a new file named something like <code>lesson.html</code>, or in
+ many tools choose an option to open or download it as a file. Then open that file in a browser
+ such as Chrome or Edge. Choose File, Print. In the print window, choose "Save as PDF" as the
+ destination and set the paper size to Letter. That gives you a clean handout you can print or
+ send. You can also paste the HTML directly into the HTML editor or rich-text view in Canvas,
+ Google Docs, or a class page.</p>
+ </div></div>
 
  <div data-tabs class="mt-3">
  <div class="tabs" role="tablist">
@@ -171,6 +190,8 @@
  <button class="tab" data-target="#wf-feedback"> Feedback</button>
  <button class="tab" data-target="#wf-comm"> Communication</button>
  <button class="tab" data-target="#wf-ideas"> Brainstorming</button>
+ <button class="tab" data-target="#wf-syllabus"> Syllabus</button>
+ <button class="tab" data-target="#wf-interview-rubric"> Interview rubric</button>
  </div>
 
  <!-- Planning -->
@@ -181,11 +202,40 @@
  <h4 class="mt-3">Copy-ready prompt</h4>
  <div class="callout callout-note"><div>
  <p>
- "I am a [subject] teacher for [grade]. Design a [length]-minute lesson
- on [topic]. Include: a hook, the key learning target aligned to [standard], an active
- student task, differentiation for [struggling/advanced learners], and a quick
- formative check. Keep student cognitive load low. No busywork. Write it in a
- friendly, practical tone."
+ "I am a [subject] teacher for [grade level]. I teach [course or class name], about
+ [number] students. Design a complete, [length]-minute lesson on [topic].<br><br>
+ Context to design for: [paste anything useful here, what students already know, the unit
+ or project this fits into, materials you have, and any pacing or classroom constraints].<br><br>
+ The lesson must include all of these parts, each under its own clear heading:<br>
+ 1. A hook, an opening that pulls students in and connects to what they already know.<br>
+ 2. The key learning target, written as a clear, student-friendly objective and aligned to
+ this standard: [paste standard or standard code].<br>
+ 3. An active student task. Describe it step by step so another teacher could run it without
+ more explanation. Make sure students are doing something, not just watching or listening.<br>
+ 4. Differentiation built into the task, not added on at the end, for [struggling learners]
+ and for [advanced learners].<br>
+ 5. A quick formative check, so I can see in the moment who is getting it and who is not.<br>
+ 6. A closing and a short exit ticket.<br><br>
+ Keep the cognitive load low, one clear idea at a time. No busywork, no fluff. Write in a
+ friendly, practical tone I can actually use tomorrow.<br><br>
+ Output rules, apply these to everything you produce for me:<br>
+ Output one complete, standalone HTML document. Include the opening and closing tags, a
+ &lt;style&gt; section, and all content inside it. Do not use markdown, code fences, or plain
+ text outside the HTML.<br>
+ Style the HTML so it prints cleanly to PDF. Use a white background, a readable font at about
+ 11 to 12 points, comfortable line spacing, and normal margins for letter-size or A4 paper.
+ Add print rules so a heading is never the last line on a page and a table row is never split
+ across pages. Keep it simple and professional, no dark backgrounds or loud colors.<br>
+ Use headings and short paragraphs to organize the content. When the information is naturally
+ a set of columns, use an HTML table instead of a list.<br>
+ Hard rule: never use em dashes (the long dash). Use periods or commas instead.<br>
+ Hard rule: do not use bullet points or numbered lists in the output unless I specifically ask
+ for them. Prefer clear headings, short sentences, and tables.<br>
+ Write in plain, concrete language. No vague filler.<br>
+ At the very end, in plain text just before the HTML, add one line telling me how to use the
+ result. Use the words: 'Open this HTML file in your browser, then choose File, Print, Save
+ as PDF. You can also paste the HTML straight into Canvas, Google Docs, or a class page. If
+ you would like a CSV planning grid version instead, ask me for one.'"
  </p>
  </div>
  </div>
@@ -206,12 +256,33 @@
  <h4 class="mt-3">Copy-ready prompt</h4>
  <div class="callout callout-note"><div>
  <p>
- "Here is a task my students complete: [paste task]. Create three versions on the same
- topic for the same learning goal. Version A supports students who need more scaffolding
- (add sentence starters and simplify the vocabulary). Version B is the standard level.
- Version C extends students who are ready for a challenge (deeper questions, real-world
- application). Keep the core learning goal identical across all three. Do not lower the
- standard, raise the support."
+ "Here is a task my students complete: [paste the full task]. I teach [grade level] [subject],
+ and about [number] students, some of whom read below grade level and some who are ready for
+ deeper challenge.<br><br>
+ Create three versions of this same task, all on the same topic and all aimed at the same core
+ learning goal, which is: [state the learning goal]. Do not lower the standard in any version,
+ change the path and the support, never the bar.<br><br>
+ Version A, Support level, for students who need more scaffolding. Simplify the vocabulary,
+ break the task into smaller steps, add sentence starters, and reduce the number of choices to
+ make. Keep the same learning goal, just give more structure.<br>
+ Version B, Core level, the standard version that most students complete.<br>
+ Version C, Stretch level, for students ready for a challenge. Add deeper questions, real-world
+ application, or open-ended extension without changing the core goal.<br><br>
+ For each version, state clearly what stays the same and what changes, and why. Then write the
+ three versions side by side in one HTML table, one version per column, so I can see the
+ scaffolding differences at a glance and print one clean handout.<br><br>
+ Output rules, apply these to everything you produce for me:<br>
+ Output one complete, standalone HTML document with proper opening and closing tags and a
+ &lt;style&gt; section. No markdown, no code fences.<br>
+ Style it so it prints cleanly to PDF. White background, readable font at about 11 to 12
+ points, letter-size or A4 margins, and print rules so rows and headings are not cut across
+ pages.<br>
+ Hard rule: never use em dashes. Use periods or commas.<br>
+ Hard rule: no bullet points or numbered lists unless I ask for them. Use headings, short
+ sentences, and tables.<br>
+ At the very end, in plain text just before the HTML, add one line telling me how to use the
+ result. Use the words: 'Open this HTML file in your browser, then choose File, Print, Save as
+ PDF. You can also paste it into Canvas, Google Docs, or a class page.'"
  </p>
  </div>
  </div>
@@ -231,10 +302,29 @@
  <h4 class="mt-3">Copy-ready prompt</h4>
  <div class="callout callout-note"><div>
  <p>
- "Create a single-point rubric for this assignment: [paste assignment]. Use three
- criteria, each with a 'meets expectations' description that is specific and observable,
- plus a space for 'exceeds' and 'developing.' Use language that a [grade] student can
- understand. Avoid vague words like 'good' or 'well.'"
+ "Create a clear, fair rubric for this assignment: [paste the full assignment, including the
+ prompt]. The subject is [subject] and the grade level is [grade]. Use [number] criteria that
+ cover the important parts of the assignment.<br><br>
+ For each criterion, write a 'meets expectations' description that is specific and observable,
+ so I could look at a student's work and tell, without guessing, whether it meets it. Then add
+ a shorter note for 'exceeds' and a shorter note for 'developing.' Use language a [grade]
+ student can understand. Avoid vague words like 'good' or 'well' and describe what the work
+ actually looks like.<br><br>
+ Present the rubric as one clean HTML table. Rows are the criteria, columns are the performance
+ levels, from 'developing' to 'exceeding.' Add a blank column on the far right where I can
+ record a student's level. Keep the table readable on one printed page if possible.<br><br>
+ Output rules, apply these to everything you produce for me:<br>
+ Output one complete, standalone HTML document with proper tags and a &lt;style&gt; section. No
+ markdown, no code fences.<br>
+ Style it to print cleanly to PDF. White background, readable font at about 11 to 12 points,
+ letter-size margins, and print rules so the table does not break awkwardly across pages.<br>
+ Hard rule: never use em dashes. Use periods or commas.<br>
+ Hard rule: no bullet points or numbered lists unless I ask for them. Use headings, short
+ sentences, and the table.<br>
+ At the very end, in plain text just before the HTML, add one line telling me how to use the
+ result. Use the words: 'Open this HTML file in your browser, then choose File, Print, Save as
+ PDF. You can also paste the table into Canvas or Google Docs. If you would prefer a CSV file
+ to import into a spreadsheet, ask me for one.'"
  </p>
  </div>
  </div>
@@ -254,9 +344,28 @@
  <h4 class="mt-3">Copy-ready prompt</h4>
  <div class="callout callout-note"><div>
  <p>
- "Draft kind, specific, actionable feedback for a [grade] student who [describe the
- strength and the area to grow, no names]. Make it encouraging, use clear language,
- and end with one concrete next step. Two to four sentences."
+ "I am a [subject] teacher for [grade level]. Draft kind, specific, actionable feedback for a
+ student who [describe the strength and the area to grow, no names]. Here is the work or the
+ situation: [paste the relevant context, the assignment, and any notes you want reflected].<br><br>
+ Write the feedback so it opens with a genuine, specific strength, named with an example, not a
+ generic compliment. Then state one clear area to grow, in language the student can understand
+ and act on. Then end with one concrete next step, something the student could do tonight, not a
+ vague 'keep trying.'<br>
+ Keep it encouraging and direct, about two to four sentences of body copy. Match the tone to
+ a respectful coach, not a judge. Do not invent strengths or issues that are not in the work I
+ gave you.<br><br>
+ Output rules, apply these to everything you produce for me:<br>
+ Output one complete, standalone HTML document with proper tags and a &lt;style&gt; section. No
+ markdown, no code fences.<br>
+ Structure it as a small printable feedback slip. Put a clear heading, the student's initials
+ or ID number in a bracketed placeholder [ ], the body copy in short paragraphs, and the next
+ step in its own short paragraph. Style it to print cleanly to PDF on letter-size paper, with
+ room to write nothing extra, just the slip.<br>
+ Hard rule: never use em dashes. Use periods or commas.<br>
+ Hard rule: no bullet points or numbered lists unless I ask for them.<br>
+ At the very end, in plain text just before the HTML, add one line telling me how to use the
+ result. Use the words: 'Open this HTML file in your browser, then choose File, Print, Save as
+ PDF. You can also paste the text straight into Canvas or your feedback tool.'"
  </p>
  </div>
  </div>
@@ -277,10 +386,27 @@
  <h4 class="mt-3">Copy-ready prompt</h4>
  <div class="callout callout-note"><div>
  <p>
- "Write a warm, professional email to a parent about [topic: e.g., a positive update, a
- concern, a reminder]. Keep it to about 100 words, friendly but clear, and end with an
- invitation to reply. Do not include any student name or private information, leave a
- blank [ ] where I'll add the specifics myself."
+ "I am a [subject] teacher for [grade level]. I need to write a warm, professional email to a
+ parent or guardian about: [topic, e.g., a positive update, a concern, a reminder, a
+ scheduling question]. Here is the context: [paste any details you want reflected, the
+ student's situation, the class, and the outcome you are hoping for].<br><br>
+ Write the email so it opens with a genuine, specific positive note about the student, not a
+ generic greeting. Then state the reason for the email clearly and kindly, in plain language,
+ no blame. Then end with an invitation to reply or a clear next step, and a friendly closing.<br>
+ Keep the whole body to about 100 to 150 words. Match the tone to a partner in the student's
+ learning, warm, direct, and human. Do not include any student name or private information.
+ Where you need a name or a specific detail, leave a blank [ ] so I can add it myself.<br><br>
+ Output the email body as complete HTML you can copy into Gmail or Outlook, with a clean
+ structure. Use the subject line as a heading, then the body in short paragraphs. No signature
+ block, I will add my own.<br><br>
+ Output rules, apply these to everything you produce for me:<br>
+ Output one complete, standalone HTML document with proper tags and a &lt;style&gt; section. No
+ markdown, no code fences. Keep the styling light so it reads like an ordinary email.<br>
+ Hard rule: never use em dashes. Use periods or commas.<br>
+ Hard rule: no bullet points or numbered lists unless I ask for them.<br>
+ At the very end, in plain text just before the HTML, add one line telling me how to use the
+ result. Use the words: 'Open this HTML file in your browser to preview it, then copy the text
+ and paste it into Gmail or Outlook. There is no need to print this one.'"
  </p>
  </div>
  </div>
@@ -301,9 +427,28 @@
  <h4 class="mt-3">Copy-ready prompt</h4>
  <div class="callout callout-note"><div>
  <p>
- "I need [X] ideas for [goal: a hook for a unit, a way to review, a project idea, a
- discussion question]. Give me 10 diverse options, each in one sentence. After you list
- them, tell me which three you think are most engaging for [grade] students and why."
+ "I am a [subject] teacher for [grade level]. I need [X] ideas for [goal: a hook for a unit, a
+ way to review, a project idea, a discussion question, a way to make a topic engaging]. Here is
+ the context: [paste the topic, what students already know, how much time you have, and anything
+ that did not work before].<br><br>
+ Give me [X] diverse options, each described in one or two clear sentences. Make the options
+ genuinely different from each other, not the same idea restated. Then tell me which three you
+ think would be most engaging for [grade] students and explain, in one or two sentences each,
+ why those three.<br><br>
+ After the ideas, show me how to turn my chosen idea into action, a short plan of the first three
+ steps to set it up.<br><br>
+ Output rules, apply these to everything you produce for me:<br>
+ Output one complete, standalone HTML document with proper tags and a &lt;style&gt; section. No
+ markdown, no code fences.<br>
+ Present the options as an HTML table, one option per row, with a column for the idea and a
+ column for a short note on how to use it. Put your top three recommendations in their own short
+ section after the table. Style it to print cleanly to PDF on letter-size paper.<br>
+ Hard rule: never use em dashes. Use periods or commas.<br>
+ Hard rule: no bullet points or numbered lists unless I ask for them. Use headings, short
+ sentences, and the table.<br>
+ At the very end, in plain text just before the HTML, add one line telling me how to use the
+ result. Use the words: 'Open this HTML file in your browser, then choose File, Print, Save as
+ PDF, or copy the options into a planning doc.'"
  </p>
  </div>
  </div>
@@ -311,6 +456,112 @@
  <ul>
  <li>Use it to get unstuck, not to copy. Pick and adapt.</li>
  <li>Ask for more "out-of-the-box" options if the first set is predictable.</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- Syllabus interview -->
+ <div class="tab-pane" id="wf-syllabus">
+ <div class="card">
+ <h3>Workflow: A syllabus, built one question at a time</h3>
+ <p class="lead">Paste this into your AI tool of choice. It interviews you, one question at a time, then drafts a complete, print-ready syllabus when you say you're done.</p>
+ <h4 class="mt-3">Copy-ready prompt</h4>
+ <div class="callout callout-note"><div>
+ <p>
+ "I want you to help me write a course syllabus for my class. To do this well, you will
+ interview me one question at a time, and only after I answer do you ask the next
+ question. Ask only one question at a time, and wait for my answer before continuing.<br><br>
+ Ask about everything you need to write a complete syllabus. You do not need to ask about
+ all of these, use your judgment based on my answers, but cover the important ones: the
+ course name, subject, and grade level; my name and how students should reach me; the
+ course description and big-picture goal; the main topics or units in order; how the class
+ is graded (categories and weights); the grading scale if the school uses one; late-work
+ and make-up policy; classroom expectations and rules; the materials or supplies students
+ need; the technology and platforms we use; any required district or school policies I must
+ include; attendance and participation expectations; how academic honesty and AI use are
+ handled; where to find assignments and grades; and anything else that belongs on a
+ syllabus for my school.<br><br>
+ Keep your questions short and plain. Do not offer suggestions yet, first gather what I
+ tell you. Never use em dashes. Do not use bullet points or numbered lists.<br><br>
+ After you have gathered enough, ask me one final question in your own words, asking
+ whether I have anything else I want included or any other questions you should ask. When I
+ tell you that I have nothing more to add (I may say 'no further questions' or 'you have
+ everything' or anything similar), stop asking questions and build the syllabus.<br><br>
+ Then produce the syllabus as one complete, standalone HTML document with proper opening
+ and closing tags and a &lt;style&gt; section. Do not use markdown or code fences. Style it so
+ it prints cleanly to PDF, a white background, a readable font at about 11 to 12 points,
+ and letter-size margins, with print rules so a heading is never the last line on a page.
+ Use clear section headings for each part of the syllabus and short paragraphs, and put
+ anything that is naturally a set of columns in an HTML table. Use the exact facts I gave
+ you and do not invent policies, grades, or expectations that I did not mention. Where a
+ real detail is still missing, leave a clear blank [ ] for me to fill in rather than making
+ one up.<br><br>
+ Never use em dashes in the syllabus. Do not use bullet points or numbered lists unless a
+ list is the clearest way to show something, and keep those short. At the very end, in
+ plain text just before the HTML, add one line telling me how to use the result. Use the
+ words: 'Open this HTML file in your browser, then choose File, Print, Save as PDF. You can
+ also paste the HTML into Canvas, Google Docs, or your school's syllabus form.'"
+ </p>
+ </div>
+ </div>
+ <h4 class="mt-2">Make it yours</h4>
+ <ul>
+ <li>Run it fresh each term so the syllabus matches your current policies.</li>
+ <li>Tell it your school's exact grading scale and any required district language.</li>
+ <li>Re-read the whole syllabus before you share it. You're accountable for it.</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- Interview-based rubric -->
+ <div class="tab-pane" id="wf-interview-rubric">
+ <div class="card">
+ <h3>Workflow: A rubric, built one question at a time</h3>
+ <p class="lead">Paste this into your AI tool of choice. It interviews you about the assignment, one question at a time, then drafts a clear, fair rubric when you say you're done.</p>
+ <h4 class="mt-3">Copy-ready prompt</h4>
+ <div class="callout callout-note"><div>
+ <p>
+ "I want you to help me write a rubric for an assignment. To do this well, you will
+ interview me one question at a time, and only after I answer do you ask the next
+ question. Ask only one question at a time, and wait for my answer before continuing.<br><br>
+ Ask about everything you need to write a strong, usable rubric. You do not need to ask
+ about all of these, use your judgment based on my answers, but cover the important ones:
+ the assignment itself and what students turn in; the subject and grade level; the main
+ learning goals or standards the assignment assesses; how many criteria the rubric should
+ have and what they are; how many performance levels the school or I want (for example,
+ meeting, approaching, and developing, or a 4-point scale); how strict or lenient the
+ descriptions should be; whether students will see the rubric before they start; how the
+ rubric connects to the grade; and anything else that will make the rubric fair and clear
+ for my students.<br><br>
+ Keep your questions short and plain. Do not offer the rubric yet, first gather what I tell
+ you. Never use em dashes. Do not use bullet points or numbered lists.<br><br>
+ After you have gathered enough, ask me one final question in your own words, asking
+ whether I have anything else I want included or any other questions you should ask. When I
+ tell you that I have nothing more to add (I may say 'no further questions' or 'you have
+ everything' or anything similar), stop asking questions and build the rubric.<br><br>
+ Then produce the rubric as one complete, standalone HTML document with proper opening and
+ closing tags and a &lt;style&gt; section. Do not use markdown or code fences. Present the
+ rubric as a clean HTML table, with one row per criterion and one column per performance
+ level, plus a blank column on the far right where I can record a student's level. Write
+ each level description in language a student can understand, specific and observable, not
+ vague words like 'good' or 'well.' Style it so it prints cleanly to PDF, a white
+ background, a readable font at about 11 to 12 points, and letter-size margins, with print
+ rules so a table row is never split across pages and the rubric fits on as few pages as
+ possible.<br><br>
+ Never use em dashes in the rubric. Do not use bullet points or numbered lists. Use the
+ exact facts I gave you and do not invent criteria, levels, or expectations that I did not
+ mention. At the very end, in plain text just before the HTML, add one line telling me how
+ to use the result. Use the words: 'Open this HTML file in your browser, then choose File,
+ Print, Save as PDF. You can also paste the table into Canvas or Google Docs. If you would
+ prefer a CSV file to import into a spreadsheet, ask me for one.'"
+ </p>
+ </div>
+ </div>
+ <h4 class="mt-2">Make it yours</h4>
+ <ul>
+ <li>Run it before you assign the work, and share the finished rubric with students up front.</li>
+ <li>Ask for a CSV version if you want to import the rubric into a gradebook.</li>
+ <li>Check the levels against your school's grading expectations before using.</li>
  </ul>
  </div>
  </div>
