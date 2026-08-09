@@ -19,7 +19,11 @@
  <span class="brand-mark">AI</span>
  <span class="brand-text">AI in Education<span>Professional Learning Hub</span></span>
  </a>
- <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+ <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+  <span class="nav-toggle-bar"></span>
+  <span class="nav-toggle-bar"></span>
+  <span class="nav-toggle-bar"></span>
+ </button>
  <nav class="nav-links" aria-label="Main">
  <a href="../index.html">Home</a>
  <a href="pd-overview.html">The 3 PD Sessions</a>
@@ -42,12 +46,25 @@
  your judgment in the driver's seat.
  </p>
  <div class="pd-meta">
- <span class="meta-pill">⏱ ≈ 40 min</span>
+ <span class="meta-pill">≈ 40 min</span>
  <span class="meta-pill"> All staff</span>
  <span class="meta-pill"> Takeaway: 3 workflows + prompt toolkit</span>
  </div>
  </div>
  </div>
+
+ <!-- Session progress nav: follow along, know where you are -->
+ <nav class="session-nav" aria-label="Session progress">
+ <div class="session-nav-inner">
+ <span class="sn-label">You are here</span>
+ <a href="#warmup">Warm-up</a>
+ <a href="#mindset">The mindset</a>
+ <a href="#hands-on">Build 3 workflows</a>
+ <a href="#privacy">Privacy check</a>
+ <a href="#share">Share &amp; plan</a>
+ <a href="#takeaway">Takeaway</a>
+ </div>
+ </nav>
 
  <main class="container">
 
@@ -63,8 +80,43 @@
  </ul>
  </section>
 
+ <!-- ===== WARM-UP ===== -->
+ <section id="warmup">
+ <p class="eyebrow">0:00–0:05 · Warm-up</p>
+ <h2>Where does AI already touch your day?</h2>
+ <p class="lead mb-3">
+ Before we build anything, take stock. You probably use AI more than you think, and naming that
+ is the first step to using it on purpose.
+ </p>
+ <div class="grid grid-2">
+ <div class="card">
+ <h3>Pair-share: your AI day</h3>
+ <p>
+ With a partner, take two minutes each. Where has AI already shown up in your day, at school or
+ at home? Autocorrect, a search suggestion, a map reroute, a draft email, a recommendation. It
+ counts. Notice how often it's already quietly helping.
+ </p>
+ </div>
+ <div class="card">
+ <h3>Reality check: what AI can and can't do</h3>
+ <p>
+ AI is excellent at <strong>drafting, summarizing, and generating options</strong> fast. It is
+ unreliable at <strong>facts, math, and knowing your students</strong>. It can be confidently
+ wrong. That gap, speed on one side, judgment on the other, is exactly where this session lives.
+ </p>
+ </div>
+ </div>
+ <div class="callout callout-tip"><div>
+ <span class="callout-title">Your job for the next 40 minutes</span>
+ <p>
+ Keep your professional judgment in charge. AI suggests, you decide. Everything you build today
+ is a draft you own.
+ </p>
+ </div></div>
+ </section>
+
  <!-- ===== MINDSET ===== -->
- <section>
+ <section id="mindset">
  <p class="eyebrow">0:05–0:15 · The mindset</p>
  <h2>Three habits of effective AI use</h2>
  <div class="grid grid-3">
@@ -103,7 +155,7 @@
  </section>
 
  <!-- ===== HANDS-ON ===== -->
- <section>
+ <section id="hands-on">
  <p class="eyebrow">0:15–0:30 · Hands-on</p>
  <h2>Build three workflows you can use tomorrow</h2>
  <p class="lead mb-3">
@@ -266,9 +318,12 @@
  </section>
 
  <!-- ===== PRIVACY CHECK ===== -->
- <section>
+ <section id="privacy">
  <p class="eyebrow">Before you paste</p>
  <h2>The 10-second privacy check</h2>
+ <p class="lead mb-3">
+ Run this on every prompt before you hit send. It takes ten seconds and it protects your students.
+ </p>
  <div class="callout callout-risk"><div>
  <span class="callout-title">Never put into an unapproved AI tool</span>
  <p>Full student names · grades · IEP/504 details · medical or family information · anything identifiable.</p>
@@ -285,8 +340,50 @@
  </p>
  </section>
 
+ <!-- ===== SHARE & PLAN ===== -->
+ <section id="share">
+ <p class="eyebrow">0:30–0:40 · Share &amp; plan</p>
+ <h2>Share one win, set your first goal</h2>
+ <p class="lead mb-3">
+ You've built three workflows. Now make them stick. This last ten minutes turns today's work into
+ tomorrow's habit.
+ </p>
+ <div class="grid grid-3">
+ <div class="card">
+ <h3>Share one win</h3>
+ <p>
+ With your table, share the single workflow that surprised you most, or the one you're most
+ likely to actually use. Name the tool and the task. Hearing each other's picks is how good
+ ideas spread.
+ </p>
+ </div>
+ <div class="card">
+ <h3>Save your prompt toolkit</h3>
+ <p>
+ Copy your three chosen prompts into a Google Doc, a note, or a folder you can find. Add a
+ one-line note on what to change for your subject. This is your personal prompt toolkit, and
+ it's the thing you keep after today.
+ </p>
+ </div>
+ <div class="card">
+ <h3>Set a "use it tomorrow" goal</h3>
+ <p>
+ Pick one concrete thing you'll do with AI in the next week. Make it specific: "I'll draft one
+ lesson with AI before Tuesday," not "I'll use AI more." Write it down and tell a partner.
+ </p>
+ </div>
+ </div>
+ <div class="callout callout-tip"><div>
+ <span class="callout-title">Keep the momentum going</span>
+ <p>
+ Bring your best prompt to your next <a href="department-activities.html">department meeting</a>
+ and swap it with colleagues. That's how a personal toolkit becomes a shared one.
+ </p>
+ </div></div>
+ </section>
+
  <!-- ===== TAKEAWAY ===== -->
- <div class="takeaway">
+ <div class="takeaway" id="takeaway">
  <h3> Leave with this</h3>
  <ul>
  <li><strong>Three workflows</strong> you built (or customized) today, saved to your prompt toolkit.</li>
@@ -297,7 +394,7 @@
  </div>
 
  <!-- ===== DEEPER ===== -->
- <section>
+ <section id="deeper">
  <p class="eyebrow">Go deeper</p>
  <h2>Want to take this further?</h2>
  <div class="grid grid-3">

@@ -19,7 +19,11 @@
  <span class="brand-mark">AI</span>
  <span class="brand-text">AI in Education<span>Professional Learning Hub</span></span>
  </a>
- <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+ <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+  <span class="nav-toggle-bar"></span>
+  <span class="nav-toggle-bar"></span>
+  <span class="nav-toggle-bar"></span>
+ </button>
  <nav class="nav-links" aria-label="Main">
  <a href="../index.html">Home</a>
  <a href="pd-overview.html">The 3 PD Sessions</a>
@@ -42,12 +46,27 @@
  protect cognitive load, equity, and student data.
  </p>
  <div class="pd-meta">
- <span class="meta-pill">⏱ ≈ 40 min</span>
+ <span class="meta-pill">≈ 40 min</span>
  <span class="meta-pill"> With students</span>
  <span class="meta-pill"> Takeaway: 2 activities + data checklist</span>
  </div>
  </div>
  </div>
+
+ <!-- Session progress nav: follow along, know where you are -->
+ <nav class="session-nav" aria-label="Session progress">
+ <div class="session-nav-inner">
+ <span class="sn-label">You are here</span>
+ <a href="#warmup">Warm-up</a>
+ <a href="#rule">The rule</a>
+ <a href="#activities">Build 2 activities</a>
+ <a href="#brainstorm">Brainstorm your own</a>
+ <a href="#datasafety">Data-safety check</a>
+ <a href="#equity">Equity</a>
+ <a href="#share">Share &amp; plan</a>
+ <a href="#takeaway">Takeaway</a>
+ </div>
+ </nav>
 
  <main class="container">
 
@@ -63,8 +82,43 @@
  </ul>
  </section>
 
+ <!-- ===== WARM-UP ===== -->
+ <section id="warmup">
+ <p class="eyebrow">0:00–0:05 · Warm-up</p>
+ <h2>"AI did my homework"</h2>
+ <p class="lead mb-3">
+ Start with honesty. Every teacher in this room has a fear or a hope about students and AI.
+ Naming them out loud is the first step to a shared, workable approach.
+ </p>
+ <div class="grid grid-2">
+ <div class="card">
+ <h3>Name the fears</h3>
+ <p>
+ With a partner, take two minutes. What worries you most about students using AI? Plagiarism,
+ lost thinking, unfair advantage, students who won't try. Write them down. There are no wrong
+ answers here, this is the honest starting point.
+ </p>
+ </div>
+ <div class="card">
+ <h3>Name the hopes</h3>
+ <p>
+ Now flip it. What could students do <em>better</em> with AI in their hands? A stuck writer gets
+ unstuck, a shy student gets a practice partner, a curious one goes deeper. Hold both lists.
+ This session is about the hopes without ignoring the fears.
+ </p>
+ </div>
+ </div>
+ <div class="callout callout-tip"><div>
+ <span class="callout-title">The question we're answering today</span>
+ <p>
+ What do we want students to do with AI? Not "should they use it," but "how do we make sure
+ they use it well, under our direction." That's the whole session.
+ </p>
+ </div></div>
+ </section>
+
  <!-- ===== COGNITIVE LOAD TEST ===== -->
- <section>
+ <section id="rule">
  <p class="eyebrow">0:05–0:15 · The rule</p>
  <h2>The cognitive-load test every activity must pass</h2>
  <p class="lead mb-3">
@@ -118,7 +172,7 @@
  </section>
 
  <!-- ===== ACTIVITY TEMPLATES ===== -->
- <section>
+ <section id="activities">
  <p class="eyebrow">0:15–0:30 · Hands-on</p>
  <h2>Ready-to-adapt classroom activities</h2>
  <p class="lead mb-3">
@@ -302,7 +356,7 @@
  </section>
 
  <!-- ===== BRAINSTORM PROMPTS ===== -->
- <section>
+ <section id="brainstorm">
  <p class="eyebrow">0:25–0:30 · Brainstorm your own</p>
  <h2>Turn any task into an AI-thinking activity</h2>
  <p class="lead mb-3">
@@ -380,7 +434,7 @@
  </section>
 
  <!-- ===== STUDENT DATA SAFETY ===== -->
- <section>
+ <section id="datasafety">
  <p class="eyebrow">Before students log in</p>
  <h2>The student data-safety checklist</h2>
  <p class="lead mb-3">
@@ -402,7 +456,7 @@
  </section>
 
  <!-- ===== EQUITY ===== -->
- <section>
+ <section id="equity">
  <p class="eyebrow">Bias, race &amp; inclusion</p>
  <h2>Keep equity at the center</h2>
  <div class="grid grid-3">
@@ -423,8 +477,50 @@
  </div>
  </section>
 
+ <!-- ===== SHARE & PLAN ===== -->
+ <section id="share">
+ <p class="eyebrow">0:30–0:40 · Share &amp; plan</p>
+ <h2>Share one activity, set a date</h2>
+ <p class="lead mb-3">
+ You've designed two classroom activities. Now make them real. This last ten minutes turns
+ today's plans into next week's lessons.
+ </p>
+ <div class="grid grid-3">
+ <div class="card">
+ <h3>Share one activity</h3>
+ <p>
+ With your table, walk through the activity you're most excited to run. Name the subject, the
+ grade, and the thinking job the student does. Get one concrete suggestion from a colleague to
+ make it stronger.
+ </p>
+ </div>
+ <div class="card">
+ <h3>Run the data-safety check</h3>
+ <p>
+ For the activity you'll actually run, walk the <a href="#datasafety">data-safety checklist</a>
+ out loud. Which tool? Is it approved for student use? What stays out of the prompt? Make sure
+ the answer is clean before you leave.
+ </p>
+ </div>
+ <div class="card">
+ <h3>Set a date on the calendar</h3>
+ <p>
+ Pick the week you'll run it and write it down. Tell a partner. A date on the calendar is what
+ turns a good idea into something students actually experience.
+ </p>
+ </div>
+ </div>
+ <div class="callout callout-tip"><div>
+ <span class="callout-title">Keep the momentum going</span>
+ <p>
+ Bring your adapted activity to your next <a href="department-activities.html">department meeting</a>
+ and trade feedback. That's how a good activity becomes a great, subject-ready one.
+ </p>
+ </div></div>
+ </section>
+
  <!-- ===== TAKEAWAY ===== -->
- <div class="takeaway">
+ <div class="takeaway" id="takeaway">
  <h3> Leave with this</h3>
  <ul>
  <li><strong>Two classroom activities</strong> you adapted for your subject and grade.</li>

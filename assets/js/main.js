@@ -43,6 +43,31 @@
       });
     });
 
+    // Session progress nav (scrollspy) — highlights the section you're in
+    var sessionNav = document.querySelector(".session-nav");
+    if (sessionNav) {
+      var links = Array.prototype.slice.call(sessionNav.querySelectorAll("a[href^='#']"));
+      var sections = links.map(function (a) {
+        return document.querySelector(a.getAttribute("href"));
+      }).filter(Boolean);
+
+      function updateSpy() {
+        var pos = window.scrollY + 140; // offset for sticky header + session nav
+        var current = null;
+        sections.forEach(function (sec) {
+          if (sec.offsetTop <= pos) current = sec;
+        });
+        links.forEach(function (a, i) {
+          var on = sections[i] === current;
+          a.classList.toggle("active", on);
+          // mark everything above the current section as "done"
+          a.classList.toggle("done", sections[i] && current && sections[i].offsetTop < current.offsetTop);
+        });
+      }
+      window.addEventListener("scroll", updateSpy, { passive: true });
+      updateSpy();
+    }
+
     // Auto-open print-friendly? (no)
     // Add current-year to footer where marked
     document.querySelectorAll("[data-year]").forEach(function (el) {
