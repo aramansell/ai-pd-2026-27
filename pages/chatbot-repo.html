@@ -50,15 +50,15 @@
  <h1>AI Teacher Workbench: use it right in your browser</h1>
  <p class="lede">
  A free AI workspace for teachers, hosted for our school. No download, no install, nothing to
- run, so it works on any Chromebook. Bring your own free Ollama Cloud key, or just use the
- school's default model, and you are ready to chat, draft prompts, and grade a class set into
- feedback PDFs.
+ run, so it works on any Chromebook. It uses the school's default model, so there is nothing to
+ set up. Open it and you are ready to chat, draft prompts, and grade a class set into feedback
+ PDFs.
  </p>
  <div class="pd-meta">
  <span class="meta-pill">Free</span>
  <span class="meta-pill">No install</span>
  <span class="meta-pill">Works on Chromebooks</span>
- <span class="meta-pill">Bring your own key</span>
+ <span class="meta-pill">No key needed</span>
  </div>
  <div class="btn-row" style="margin-top:18px;">
  <a class="btn btn-primary" href="https://local-ai-workbench-psi.vercel.app/" target="_blank" rel="noopener">Open the Workbench →</a>
@@ -79,7 +79,7 @@
  </p>
  <div class="callout callout-ok"><div><span class="callout-title">Open the live Workbench</span><p>
  <a class="btn btn-primary" href="https://local-ai-workbench-psi.vercel.app/" target="_blank" rel="noopener">Open the AI Teacher Workbench →</a>
- <span class="muted">(a hosted instance provided by the school; your API key, if you add one, is used only for your session and is never saved)</span>
+ <span class="muted">(a hosted instance provided by the school, already connected to the default model)</span>
  </p></div></div>
  </section>
 
@@ -110,41 +110,23 @@
  <!-- ===== HOW IT WORKS ===== -->
  <section id="get-started">
  <p class="eyebrow">How it works</p>
- <h2>Connect a model, then get to work</h2>
+ <h2>Open it and start working</h2>
  <p class="lead mb-3">
- When you open the Workbench, the first thing you see is a "Connect a model" panel. That is
- where you pick your AI engine. It is the only setup step.
+ The Workbench is already connected to the school's default model. There is no setup, no key,
+ and no account. Open it, pick a prompt or just type, and start working.
  </p>
- <div class="grid grid-2">
- <div class="card">
- <h3>Bring your own free key (recommended)</h3>
- <p>
- Make a free Ollama Cloud account, copy your API key, paste it into the Workbench, pick a model,
- and click "Connect &amp; start session." Your key is used only for your session and is never saved
- anywhere. This gives you your own private usage and lets you choose your model.
- </p>
- </div>
- <div class="card">
- <h3>Or just use the school's default</h3>
- <p>
- Leave the key field blank and click "Use default." The Workbench connects using the school's
- hosted model so you can try it instantly, no account needed. Great for a first look in a
- department meeting.
- </p>
- </div>
- </div>
  <div class="callout callout-tip"><div>
- <span class="callout-title">Why bring your own key?</span>
+ <span class="callout-title">What you can do</span>
  <p>
- Ollama Cloud has a free tier, so your own key costs nothing to start. It means your chats are
- billed to your own free allowance rather than the school's, and you can pick the model that
- fits your task. If you would rather not make an account, the school default is always there.
+ Choose a prompt from the library and fill in the form, or just ask the chat. The result appears
+ as a readable preview you can <strong>Download</strong> as Word, HTML, CSV, or PowerPoint,
+ <strong>revise</strong> with a typed change or a quick button, or <strong>edit in place</strong>.
  </p>
  </div></div>
  </section>
 
- <!-- ===== GET A KEY ===== -->
- <section>
+ <!-- ===== GET A KEY (hidden while testing; re-enable later) ===== -->
+ <section style="display:none">
  <p class="eyebrow">One-time, about 2 minutes</p>
  <h2>Get your free Ollama Cloud API key</h2>
  <p class="lead mb-3">
