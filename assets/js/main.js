@@ -7,13 +7,23 @@
     var toggle = document.querySelector(".nav-toggle");
     var nav = document.querySelector(".nav-links");
     if (toggle && nav) {
+      function closeNav() {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
       toggle.addEventListener("click", function () {
-        nav.classList.toggle("open");
-        var label = toggle.getAttribute("aria-expanded") === "true" ? "false" : "true";
-        toggle.setAttribute("aria-expanded", label);
+        var open = nav.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
       });
       nav.addEventListener("click", function (e) {
-        if (e.target.tagName === "A") nav.classList.remove("open");
+        if (e.target.tagName === "A") closeNav();
+      });
+      // Close on Escape or a click outside the header
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeNav();
+      });
+      document.addEventListener("click", function (e) {
+        if (!nav.contains(e.target) && !toggle.contains(e.target)) closeNav();
       });
     }
 
@@ -28,17 +38,45 @@
       });
     });
 
-    // Tabs
+    // Tabs (with ARIA wiring and arrow-key navigation)
+    function activateTab(group, tab) {
+      var tabs = Array.prototype.slice.call(group.querySelectorAll(".tab"));
+      var panes = group.querySelectorAll(".tab-pane");
+      tabs.forEach(function (t) { t.classList.remove("active"); t.setAttribute("aria-selected", "false"); });
+      panes.forEach(function (p) { p.classList.remove("active"); });
+      tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
+      var target = group.querySelector(tab.getAttribute("data-target"));
+      if (target) target.classList.add("active");
+    }
+
     var tabGroups = document.querySelectorAll("[data-tabs]");
     tabGroups.forEach(function (group) {
       var tabs = group.querySelectorAll(".tab");
-      tabs.forEach(function (tab) {
-        tab.addEventListener("click", function () {
-          tabs.forEach(function (t) { t.classList.remove("active"); });
-          group.querySelectorAll(".tab-pane").forEach(function (p) { p.classList.remove("active"); });
-          tab.classList.add("active");
-          var target = group.querySelector(tab.getAttribute("data-target"));
-          if (target) target.classList.add("active");
+      tabs.forEach(function (tab, i) {
+        var targetId = (tab.getAttribute("data-target") || "").replace(/^#/, "");
+        var tabId = targetId + "-tab";
+        tab.id = tab.id || tabId;
+        tab.setAttribute("role", "tab");
+        tab.setAttribute("aria-controls", targetId);
+        tab.setAttribute("aria-selected", tab.classList.contains("active") ? "true" : "false");
+        var pane = group.querySelector(tab.getAttribute("data-target"));
+        if (pane) {
+          pane.setAttribute("role", "tabpanel");
+          pane.setAttribute("aria-labelledby", tab.id);
+        }
+        tab.addEventListener("click", function () { activateTab(group, tab); });
+        tab.addEventListener("keydown", function (e) {
+          var current = i;
+          var next;
+          if (e.key === "ArrowRight") next = (current + 1) % tabs.length;
+          else if (e.key === "ArrowLeft") next = (current - 1 + tabs.length) % tabs.length;
+          else if (e.key === "Home") next = 0;
+          else if (e.key === "End") next = tabs.length - 1;
+          else return;
+          e.preventDefault();
+          tabs[next].focus();
+          activateTab(group, tabs[next]);
         });
       });
     });
@@ -60,7 +98,6 @@
         links.forEach(function (a, i) {
           var on = sections[i] === current;
           a.classList.toggle("active", on);
-          // mark everything above the current section as "done"
           a.classList.toggle("done", sections[i] && current && sections[i].offsetTop < current.offsetTop);
         });
       }
@@ -68,7 +105,6 @@
       updateSpy();
     }
 
-    // Auto-open print-friendly? (no)
     // Add current-year to footer where marked
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = new Date().getFullYear();

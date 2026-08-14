@@ -67,6 +67,16 @@ See `RESEARCH-NOTES.md` for the full verified figures (Claude, MS Copilot, Ollam
 Diffit, Khanmigo, etc.). Two items still unverified (blocked pages): OpenAI consumer ChatGPT
 pricing, and Canva for Education free-teacher status.
 
+## Build / single source of truth (as of 2026-08)
+- npm run build (node build.js) regenerates every page from shared sources:
+  - src/_includes/header.html + footer.html = the ONE header/nav/footer used on all 12 pages.
+  - src/data/tools.json = the data behind the Tools and Plans tables.
+  - Edit those files and rebuild, instead of hand-editing 12 pages.
+- Deployment is GitHub Actions (.github/workflows/deploy.yml), which runs npm run build and
+  publishes dist/. Set Pages Source = GitHub Actions. dist/ is git-ignored.
+- district-status.csv (repo root) is now a human-readable reference only; the authoritative tool
+  data lives in src/data/tools.json.
+
 ## Design
 - Warm, modern aesthetic (teal + gold, Lora serif headings, Lato body, warm paper bg).
 - Reference site owner liked: https://diana-brewer.github.io/digital-learning-unlocked/index.html

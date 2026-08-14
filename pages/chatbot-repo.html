@@ -3,17 +3,20 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>AI Teacher Workbench: Download and Run It Yourself | AI in Education</title>
- <meta name="description" content="A free, private, local AI workspace for teachers. Download the repo, run it on your own computer with Ollama (free, offline) or Ollama Cloud, and grade student work with a rubric into feedback PDFs. Step-by-step setup for Windows, macOS, and Linux.">
+ <title>AI Teacher Workbench: Use It in Your Browser | AI in Education</title>
+ <meta name="description" content="A free, hosted AI workspace for teachers. No install, works on Chromebooks. Bring your own free Ollama Cloud API key, or use the school's default, to chat, use copy-paste prompts, and grade a class set into feedback PDFs.">
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="AI Teacher Workbench: Use It in Your Browser | AI in Education">
+ <meta property="og:description" content="A free, hosted AI workspace for teachers. No install, works on Chromebooks. Bring your own free Ollama Cloud API key, or use the school's default, to chat, use copy-paste prompts, and grade a class set into feedback PDFs.">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="AI Teacher Workbench: Use It in Your Browser | AI in Education">
+ <meta name="twitter:description" content="A free, hosted AI workspace for teachers. No install, works on Chromebooks. Bring your own free Ollama Cloud API key, or use the school's default, to chat, use copy-paste prompts, and grade a class set into feedback PDFs.">
  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
- <header class="site-header">
+     <header class="site-header">
  <div class="header-inner">
  <a href="../index.html" class="brand">
  <span class="brand-mark">AI</span>
@@ -36,68 +39,65 @@
  </div>
  </header>
 
+
+
+
+
  <div class="pd-hero">
  <div class="container">
- <span class="pd-number">OPTIONAL · DOWNLOADABLE TOOL</span>
- <!-- ======================================================================
-   REPO + LIVE DEMO LINKS - EDIT THESE IF THEY CHANGE
-   ------------------------------------------------------------------------
-   REPO_URL : https://github.com/aramansell/local-ai-workbench
-   DEMO_URL : https://local-ai-workbench-psi.vercel.app
-   ======================================================================= -->
- <h1>AI Teacher Workbench</h1>
+ <span class="pd-number">OPTIONAL · FREE ONLINE TOOL</span>
+ <h1>AI Teacher Workbench: use it right in your browser</h1>
  <p class="lede">
- A free, private AI workspace you run on <strong>your own computer</strong>. Chat with an AI
- assistant, and grade a class set of student work against your rubric into a
- feedback PDF for every student. Nothing leaves your machine unless you choose
- the cloud option, and no student data ever trains a model.
+ A free AI workspace for teachers, hosted for our school. No download, no install, nothing to
+ run, so it works on any Chromebook. Bring your own free Ollama Cloud key, or just use the
+ school's default model, and you are ready to chat, draft prompts, and grade a class set into
+ feedback PDFs.
  </p>
  <div class="pd-meta">
- <span class="meta-pill"> Free with Ollama</span>
- <span class="meta-pill"> Works offline</span>
- <span class="meta-pill"> Windows · macOS · Linux</span>
- <span class="meta-pill"> All config in one .env</span>
+ <span class="meta-pill">Free</span>
+ <span class="meta-pill">No install</span>
+ <span class="meta-pill">Works on Chromebooks</span>
+ <span class="meta-pill">Bring your own key</span>
  </div>
  <div class="btn-row" style="margin-top:18px;">
- <a class="btn btn-primary" href="https://github.com/aramansell/local-ai-workbench" target="_blank" rel="noopener">Download the repo →</a>
- <a class="btn btn-ghost" href="#setup-steps">See the setup steps</a>
+ <a class="btn btn-primary" href="https://local-ai-workbench-psi.vercel.app/" target="_blank" rel="noopener">Open the Workbench →</a>
+ <a class="btn btn-ghost" href="#get-started">See how to get started</a>
  </div>
  </div>
  </div>
 
  <main class="container">
 
- <!-- ===== LIVE DEMO ===== -->
+ <!-- ===== TRY IT ===== -->
  <section>
  <p class="eyebrow">Try it first</p>
- <h2>See it working without installing anything</h2>
+ <h2>No setup. Open it and go.</h2>
  <p class="lead mb-3">
- We host a public demo so you can click around before you decide to run your own copy.
- The demo uses a cloud model, so uploads are not saved to disk there. The downloadable
- version on your computer exports a PDF for every student.
+ The Workbench runs on the web. You open it in any browser, connect a model, and start working.
+ Nothing is installed on your computer, and the whole app works on a Chromebook.
  </p>
- <div class="callout callout-ok"><div><span class="callout-title">Try the live demo</span><p>
- <a class="btn btn-primary" href="https://local-ai-workbench-psi.vercel.app/" target="_blank" rel="noopener">Open the live demo →</a>
- <span class="muted">(a public demo hosted on Vercel; the downloadable version on your computer exports PDFs)</span>
+ <div class="callout callout-ok"><div><span class="callout-title">Open the live Workbench</span><p>
+ <a class="btn btn-primary" href="https://local-ai-workbench-psi.vercel.app/" target="_blank" rel="noopener">Open the AI Teacher Workbench →</a>
+ <span class="muted">(a hosted instance provided by the school; your API key, if you add one, is used only for your session and is never saved)</span>
  </p></div></div>
  </section>
 
- <!-- ===== WHAT IT DOES ===== -->
+ <!-- ===== WHAT YOU GET ===== -->
  <section>
  <p class="eyebrow">What you get</p>
  <h2>Three tools in one private workspace</h2>
  <div class="grid grid-3">
  <div class="card">
  <h3>Private chat</h3>
- <p>A chat assistant for lesson planning, differentiation, assessment, communication, and more. Your conversation stays on your computer.</p>
+ <p>A chat assistant for lesson planning, differentiation, assessment, communication, and more. Add a context note or upload a document, and it stays grounded in what you give it.</p>
  </div>
  <div class="card">
  <h3>Prompt library</h3>
- <p>Copy-paste example prompts, each with <code>[BRACKETS]</code> to fill in. Load one and go.</p>
+ <p>Copy-paste example prompts, each with [BRACKETS] to fill in. Load one with a click and adapt it to your subject.</p>
  </div>
  <div class="card">
  <h3>Rubric Grader</h3>
- <p>Paste a rubric, upload a folder of student work, and get a feedback PDF per student, packed into one download.</p>
+ <p>Paste a rubric, upload student work files, and get drafted feedback for every student, packed into one download.</p>
  </div>
  </div>
  <div class="callout callout-warn"><div><span class="callout-title">The one rule</span><p>
@@ -106,13 +106,92 @@
  </p></div></div>
  </section>
 
+ <!-- ===== HOW IT WORKS ===== -->
+ <section id="get-started">
+ <p class="eyebrow">How it works</p>
+ <h2>Connect a model, then get to work</h2>
+ <p class="lead mb-3">
+ When you open the Workbench, the first thing you see is a "Connect a model" panel. That is
+ where you pick your AI engine. It is the only setup step.
+ </p>
+ <div class="grid grid-2">
+ <div class="card">
+ <h3>Bring your own free key (recommended)</h3>
+ <p>
+ Make a free Ollama Cloud account, copy your API key, paste it into the Workbench, pick a model,
+ and click "Connect &amp; start session." Your key is used only for your session and is never saved
+ anywhere. This gives you your own private usage and lets you choose your model.
+ </p>
+ </div>
+ <div class="card">
+ <h3>Or just use the school's default</h3>
+ <p>
+ Leave the key field blank and click "Use default." The Workbench connects using the school's
+ hosted model so you can try it instantly, no account needed. Great for a first look in a
+ department meeting.
+ </p>
+ </div>
+ </div>
+ <div class="callout callout-tip"><div>
+ <span class="callout-title">Why bring your own key?</span>
+ <p>
+ Ollama Cloud has a free tier, so your own key costs nothing to start. It means your chats are
+ billed to your own free allowance rather than the school's, and you can pick the model that
+ fits your task. If you would rather not make an account, the school default is always there.
+ </p>
+ </div></div>
+ </section>
+
+ <!-- ===== GET A KEY ===== -->
+ <section>
+ <p class="eyebrow">One-time, about 2 minutes</p>
+ <h2>Get your free Ollama Cloud API key</h2>
+ <p class="lead mb-3">
+ If you want to use your own key, here is the whole process. You only do this once.
+ </p>
+ <ol class="steps">
+ <li>
+ <h4>Create a free Ollama Cloud account</h4>
+ <p>Go to <a href="https://ollama.com/signup" target="_blank" rel="noopener">ollama.com/signup</a> and sign up. It is free.</p>
+ </li>
+ <li>
+ <h4>Create an API key</h4>
+ <p>In your account dashboard, create an API key. It will look something like <code>sk-...</code>. Copy it.</p>
+ </li>
+ <li>
+ <h4>Open the Workbench and paste it in</h4>
+ <p>Open the <a href="https://local-ai-workbench-psi.vercel.app/" target="_blank" rel="noopener">Workbench</a>, paste your key into the "API key" field in the Connect a model panel, pick a model from the dropdown, and click "Connect &amp; start session."</p>
+ </li>
+ </ol>
+ <div class="callout callout-risk"><div>
+ <span class="callout-title">Keep your key private</span>
+ <p>
+ Treat your API key like a password. Never paste it into a chat, an email, or a shared file.
+ The Workbench never saves it, it is only used for the session you are in.
+ </p>
+ </div></div>
+ </section>
+
+ <!-- ===== RUBRIC GRADER ===== -->
+ <section>
+ <p class="eyebrow">Put it to work</p>
+ <h2>Grade a class set with the Rubric Grader</h2>
+ <ol class="steps">
+ <li><h4>Open the Rubric Grader</h4><p>It is the second tab at the top of the Workbench.</p></li>
+ <li><h4>Paste your rubric</h4><p>A rubric with criteria and performance levels works best, for example: "Criterion 1: Thesis. Exceeding: a clear, arguable, insightful thesis. Meeting: clear and arguable. Approaching: present but vague. Not yet: no thesis." Repeat for each criterion.</p></li>
+ <li><h4>Upload one file per student</h4><p>Name each file with the student's name, such as <code>jamie-smith.docx</code>. Supported: PDF, Word (.docx), plain text (.txt), Markdown (.md), CSV (.csv). You can also upload a folder as a .zip.</p></li>
+ <li><h4>Generate drafted feedback</h4><p>The app reads each file, scores it against the rubric, and drafts feedback for every student, offered as one download.</p></li>
+ <li><h4>Review everything</h4><p>Open each one, edit anything you disagree with, and approve it before it goes to a student. The AI is a drafting assistant, not the grader of record.</p></li>
+ </ol>
+ </section>
+
  <!-- ===== EXAMPLE PROMPTS ===== -->
  <section>
  <p class="eyebrow">Copy-paste ready</p>
  <h2>Example prompts to get you started</h2>
  <p class="lead mb-3">
- These ship inside the app and can be loaded with one click. Each is a self-contained prompt
- with <code>[BRACKETS]</code> where you add your specifics.
+ These ship inside the Workbench and can be loaded with one click. Each is a self-contained prompt
+ with [BRACKETS] where you add your specifics.
  </p>
  <div class="callout callout-tip"><div>
  <span class="callout-title">Output rules shared by every prompt below</span>
@@ -128,19 +207,19 @@
 
  <div data-tabs class="mt-3">
  <div class="tabs" role="tablist">
- <button class="tab active" data-target="#ex-rubric"> Grade a class set</button>
- <button class="tab" data-target="#ex-lesson"> Lesson plan</button>
- <button class="tab" data-target="#ex-feedback"> One writing feedback</button>
- <button class="tab" data-target="#ex-diff"> Differentiate</button>
- <button class="tab" data-target="#ex-rubricwrite"> Write a rubric</button>
- <button class="tab" data-target="#ex-quiz"> Build a quiz</button>
- <button class="tab" data-target="#ex-email"> Parent email</button>
+ <button class="tab active" data-target="#ex-rubric">Grade a class set</button>
+ <button class="tab" data-target="#ex-lesson">Lesson plan</button>
+ <button class="tab" data-target="#ex-feedback">One writing feedback</button>
+ <button class="tab" data-target="#ex-diff">Differentiate</button>
+ <button class="tab" data-target="#ex-rubricwrite">Write a rubric</button>
+ <button class="tab" data-target="#ex-quiz">Build a quiz</button>
+ <button class="tab" data-target="#ex-email">Parent email</button>
  </div>
 
  <div class="tab-pane active" id="ex-rubric">
  <div class="card">
  <h3>Grade a whole class set with your rubric</h3>
- <p class="lead">Use this with the Rubric Grader tool: paste it in, upload your rubric and student files, and it writes a feedback PDF for every student.</p>
+ <p class="lead">Use this with the Rubric Grader: paste it in, upload your rubric and student files, and it drafts feedback for every student.</p>
  <pre class="code-block small">You are an experienced, fair, and supportive teacher. I am going to give
 you a rubric and a folder of student work. Grade EVERY student against the
 SAME rubric, the one I provide, and do not invent criteria beyond it.
@@ -164,7 +243,7 @@ student's voice level and respect their dignity. Never claim the student
 wrote something they did not. Never use em dashes. Do not use bullet points
 or numbered lists. You are drafting feedback for a human teacher to review
 before it goes to the student.</pre>
- <a class="btn btn-ghost" href="https://local-ai-workbench-psi.vercel.app/grade" target="_blank" rel="noopener">Try the Rubric Grader in the live demo →</a>
+ <a class="btn btn-ghost" href="https://local-ai-workbench-psi.vercel.app/grade" target="_blank" rel="noopener">Try the Rubric Grader →</a>
  </div>
  </div>
 
@@ -365,252 +444,18 @@ Gmail or Outlook.</pre>
  </div>
  </section>
 
- <!-- ===== THE APPROACH ===== -->
- <section>
- <p class="eyebrow">Two ways to run it</p>
- <h2>Choose your AI engine</h2>
- <div class="grid grid-2">
- <div class="card">
- <h3>Local Ollama: free and offline</h3>
- <p>Ollama runs on your computer. Nothing leaves the machine. This is the strongest privacy option and costs nothing.</p>
- <ul>
- <li>Install the Ollama app, pull a small model.</li>
- <li>Fast, private, works without internet.</li>
- <li>Best for a school computer or a classroom.</li>
- </ul>
- </div>
- <div class="card">
- <h3>Ollama Cloud: works without installing a model</h3>
- <p>Connect your free Ollama Cloud account with an API key. No model download, easy setup, works on any machine.</p>
- <ul>
- <li>Free tier available; you set your own budget.</li>
- <li>Needs internet and an account.</li>
- <li>Great way to start, or to put a public demo online.</li>
- </ul>
- </div>
- </div>
- <div class="callout callout-tip"><div><span class="callout-title">Recommendation</span><p>
- Start with <strong>Ollama Cloud</strong> if you want the fastest setup. Use <strong>local Ollama</strong>
- if you want the strongest privacy or you are often offline. You can switch later by changing
- one line in the <code>.env</code> file.
- </p></div></div>
- </section>
-
- <!-- ===== GET THE FILES ===== -->
- <section id="setup-steps">
- <p class="eyebrow">Step 1 · Get the files</p>
- <h2>Download or clone the repository</h2>
- <p class="lead mb-3">The whole app lives in one folder. You can clone it with git, or download it as a zip.</p>
- <div class="grid grid-2">
- <div class="card">
- <h3>Download the zip</h3>
- <ol class="small">
- <li>Go to the repository page on GitHub.</li>
- <li>Click the green <strong>Code</strong> button.</li>
- <li>Choose <strong>Download ZIP</strong>.</li>
- <li>Unzip it into a folder you can find.</li>
- </ol>
- </div>
- <div class="card">
- <h3>Or clone with git</h3>
- <pre class="code-block small">git clone https://github.com/aramansell/local-ai-workbench.git ai-workbench
-cd ai-workbench</pre>
- </div>
- </div>
- </section>
-
- <!-- ===== INSTALL PYTHON ===== -->
- <section>
- <p class="eyebrow">Step 2 · Install Python</p>
- <h2>Install Python (one time, all systems)</h2>
- <p>The app is written in Python. You need Python 3.9 or newer. It is free.</p>
- <div data-tabs class="mt-3">
- <div class="tabs" role="tablist">
- <button class="tab active" data-target="#py-win"> Windows</button>
- <button class="tab" data-target="#py-mac"> macOS</button>
- <button class="tab" data-target="#py-lin"> Linux</button>
- </div>
- <div class="tab-pane active" id="py-win">
- <div class="card">
- <h3>Windows</h3>
- <ol>
- <li>Go to <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org/downloads</a> and download the installer.</li>
- <li>Run it. On the first screen, <strong>tick the box "Add Python to PATH"</strong>. This is essential.</li>
- <li>Click Install Now.</li>
- </ol>
- <div class="callout callout-warn"><div><p>If you skip "Add Python to PATH", the setup script will not find Python. Reinstall and tick the box.</p></div></div>
- </div>
- </div>
- <div class="tab-pane" id="py-mac">
- <div class="card">
- <h3>macOS</h3>
- <ol>
- <li>Go to <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org/downloads</a>.</li>
- <li>Download the macOS installer and run it.</li>
- <li>Follow the prompts to install.</li>
- </ol>
- </div>
- </div>
- <div class="tab-pane" id="py-lin">
- <div class="card">
- <h3>Linux (Ubuntu / Debian)</h3>
- <p>Open a terminal and run:</p>
- <pre class="code-block small">sudo apt update
-sudo apt install python3 python3-venv python3-pip</pre>
- </div>
- </div>
- </div>
- </section>
-
- <!-- ===== GET AN AI ENGINE ===== -->
- <section>
- <p class="eyebrow">Step 3 · Pick your AI engine</p>
- <h2>Set up Ollama (local) or Ollama Cloud</h2>
- <div data-tabs class="mt-3">
- <div class="tabs" role="tablist">
- <button class="tab active" data-target="#ai-local"> Local Ollama (free, offline)</button>
- <button class="tab" data-target="#ai-cloud"> Ollama Cloud (free key)</button>
- </div>
-
- <div class="tab-pane active" id="ai-local">
- <div class="card">
- <h3>Local Ollama, free and fully offline</h3>
- <ol>
- <li>Go to <a href="https://ollama.com/download" target="_blank" rel="noopener">ollama.com/download</a> and install the app for your system.</li>
- <li>Open a terminal (Command Prompt on Windows, Terminal on macOS/Linux) and pull a small model:</li>
- </ol>
- <pre class="code-block small">ollama pull llama3.2</pre>
- <p class="small muted">Leave the Ollama app running. It works in the background. Other good small models: <code>qwen2.5</code>, <code>gemma2</code>, <code>llama3.1</code>. A powerful computer can run <code>llama3.3</code> or <code>mistral</code>.</p>
- </div>
- </div>
-
- <div class="tab-pane" id="ai-cloud">
- <div class="card">
- <h3>Ollama Cloud, free tier or paid</h3>
- <ol>
- <li>Go to <a href="https://ollama.com/signup" target="_blank" rel="noopener">ollama.com/signup</a> and create a free account.</li>
- <li>In your dashboard, create an <strong>API key</strong>.</li>
- <li>Copy the key. You will paste it into the <code>.env</code> file in the next step.</li>
- </ol>
- <p class="small muted">Ollama Cloud has a free tier. You can set your own budget in the dashboard. The app never spends anything unless you point it at your key.</p>
- </div>
- </div>
- </div>
- </section>
-
- <!-- ===== ONE-TIME SETUP ===== -->
- <section>
- <p class="eyebrow">Step 4 · Run the one-time setup</p>
- <h2>Install the app (first time only)</h2>
- <p class="lead mb-3">
- The setup script creates a private Python environment and installs the few libraries it needs.
- It also creates your <code>.env</code> file from a template.
- </p>
- <div data-tabs class="mt-3">
- <div class="tabs" role="tablist">
- <button class="tab active" data-target="#st-win"> Windows</button>
- <button class="tab" data-target="#st-mac"> macOS / Linux</button>
- </div>
- <div class="tab-pane active" id="st-win">
- <div class="card">
- <h3>Windows</h3>
- <p>Double-click <code>setup.bat</code>, or open Command Prompt in the folder and run:</p>
- <pre class="code-block small">setup.bat</pre>
- </div>
- </div>
- <div class="tab-pane" id="st-mac">
- <div class="card">
- <h3>macOS / Linux</h3>
- <p>Open Terminal in the folder and run:</p>
- <pre class="code-block small">chmod +x setup.sh run.sh
-./setup.sh</pre>
- </div>
- </div>
- </div>
- </section>
-
- <!-- ===== CONFIGURE .env ===== -->
- <section>
- <p class="eyebrow">Step 5 · Configure</p>
- <h2>Everything lives in one .env file</h2>
- <p class="lead mb-3">
- Open the <code>.env</code> file in any text editor. It is a simple list of <code>NAME=value</code> lines.
- This one file controls everything.
- </p>
- <div class="grid grid-2">
- <div class="card">
- <h3>For local Ollama</h3>
- <p>Make sure the first line reads:</p>
- <pre class="code-block small">PROVIDER=ollama</pre>
- <p class="small muted">That is it. Leave the API key blank.</p>
- </div>
- <div class="card">
- <h3>For Ollama Cloud</h3>
- <p>Change the first line and add your key:</p>
- <pre class="code-block small">PROVIDER=cloud
-OLLAMA_API_KEY=your-key-here</pre>
- </div>
- </div>
- <div class="callout callout-warn"><div><span class="callout-title">Keep your key private</span><p>
- The <code>.env</code> file is automatically ignored by git, so your key is never committed.
- Never rename it, and never paste your key into a chat, email, or shared file.
- </p></div></div>
- </section>
-
- <!-- ===== START ===== -->
- <section>
- <p class="eyebrow">Step 6 · Start the app</p>
- <h2>Run it and open it in your browser</h2>
- <div data-tabs class="mt-3">
- <div class="tabs" role="tablist">
- <button class="tab active" data-target="#run-win"> Windows</button>
- <button class="tab" data-target="#run-mac"> macOS / Linux</button>
- </div>
- <div class="tab-pane active" id="run-win">
- <div class="card">
- <p>Double-click <code>run.bat</code>, or run:</p>
- <pre class="code-block small">run.bat</pre>
- </div>
- </div>
- <div class="tab-pane" id="run-mac">
- <div class="card">
- <p>Run:</p>
- <pre class="code-block small">./run.sh</pre>
- </div>
- </div>
- </div>
- <p class="lead mt-3">Open <strong>http://localhost:5000</strong> in your browser. You will see the workbench with a status box that tells you whether your AI engine is ready.</p>
- <div class="callout callout-tip"><div><span class="callout-title">If it says "Not ready"</span><p>
- Local Ollama: the Ollama app must be running, and the model must be pulled (<code>ollama pull llama3.2</code>).
- Cloud: the API key is missing or wrong in <code>.env</code>.
- </p></div></div>
- </section>
-
- <!-- ===== RUBRIC GRADER HOW-TO ===== -->
- <section>
- <p class="eyebrow">Put it to work</p>
- <h2>Grade a class set with the Rubric Grader</h2>
- <ol class="steps">
- <li><h4>Open the Rubric Grader tab</h4><p>It is the second tab at the top of the app.</p></li>
- <li><h4>Paste your rubric</h4><p>A rubric with criteria and performance levels works best, for example: "Criterion 1: Thesis. Exceeding: a clear, arguable, insightful thesis. Meeting: clear and arguable. Approaching: present but vague. Not yet: no thesis." Repeat for each criterion.</p></li>
- <li><h4>Upload one file per student</h4><p>Name each file with the student's name, such as <code>jamie-smith.docx</code>. Supported: PDF, Word (.docx), plain text (.txt), Markdown (.md), CSV (.csv).</p></li>
- <li><h4>Generate feedback PDFs</h4><p>The app reads each file, scores it against the rubric, and writes a feedback PDF per student into the output folder, offered as one download.</p></li>
- <li><h4>Review every PDF</h4><p>Open each one, edit anything you disagree with, and approve it before it goes to a student. The AI is a drafting assistant, not the grader of record.</p></li>
- </ol>
- </section>
-
  <!-- ===== PRIVACY ===== -->
  <section>
  <p class="eyebrow">Privacy &amp; safety</p>
  <h2>Where your data goes</h2>
  <div class="grid grid-2">
  <div class="card">
- <h3>Local Ollama</h3>
- <p>Everything stays on your device. Nothing leaves the machine. This is the strongest privacy option.</p>
+ <h3>Your key is never saved</h3>
+ <p>If you paste your own API key, the Workbench uses it only for your current session. It is not stored, not written to a file, and not visible to anyone else.</p>
  </div>
  <div class="card">
- <h3>Ollama Cloud</h3>
- <p>Your prompts are sent to Ollama's API. Ollama does not train on API data, but content leaves your device, so keep it to lesson content, not unnecessary student PII.</p>
+ <h3>The hosted app keeps nothing</h3>
+ <p>The hosted instance runs on ephemeral storage, uploads and generated feedback exist only for the life of the request, then disappear. Nothing is kept on the server.</p>
  </div>
  </div>
  <div class="callout callout-warn"><div><span class="callout-title">Student data</span><p>
@@ -624,14 +469,33 @@ OLLAMA_API_KEY=your-key-here</pre>
  </p></div></div>
  </section>
 
+ <!-- ===== OPTIONAL LOCAL ===== -->
+ <section>
+ <p class="eyebrow">For the privacy-maximalist</p>
+ <h2>Want it fully on your own device?</h2>
+ <p class="lead mb-3">
+ The same app can run on your own computer, fully offline, with local Ollama, so nothing leaves
+ your machine at all. That is the strongest privacy option, at the cost of a little setup. It is
+ not required, the hosted Workbench above is the easiest path.
+ </p>
+ <div class="callout callout-note"><div>
+ <span class="callout-title">Local version</span>
+ <p>
+ The local version installs Ollama, pulls a small model, and runs the Workbench on
+ <code>http://localhost:5000</code>. If you would like that, ask the site owner for the current
+ local setup guide.
+ </p>
+ </div></div>
+ </section>
+
  <div class="btn-row">
- <a class="btn btn-primary" href="https://github.com/aramansell/local-ai-workbench" target="_blank" rel="noopener">Download the repo →</a>
+ <a class="btn btn-primary" href="https://local-ai-workbench-psi.vercel.app/" target="_blank" rel="noopener">Open the Workbench →</a>
  <a class="btn btn-ghost" href="tools.html">Back to the AI Toolbox</a>
  </div>
 
  </main>
 
- <footer class="site-footer">
+     <footer class="site-footer">
  <div class="container">
  <div class="footer-grid">
  <div>
@@ -658,9 +522,13 @@ OLLAMA_API_KEY=your-key-here</pre>
  </ul>
  </div>
  </div>
- <p class="disclaimer">Built for professional development. Tool pricing and features change often, always verify on the provider's official site before relying on it. "AI in Education" is not affiliated with any tool vendor. © <span data-year>2026</span> Ida B. Wells High School.</p>
+ <p class="disclaimer">Tool pricing and features change often; always verify on the provider's official site before relying on it. Tool approval reflects PPS guidance at the time of writing. Not legal advice. "AI in Education" is not affiliated with any tool vendor. &copy; <span data-year>2026</span> Ida B. Wells High School.</p>
  </div>
  </footer>
+
+
+
+
 
  <script src="../assets/js/main.js"></script>
 </body>

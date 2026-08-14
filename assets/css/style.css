@@ -4,6 +4,19 @@
    warm off-white paper, serif headings, soft shadows, pastel callouts.
    ========================================================================== */
 
+/* ==========================================================================
+   Self-hosted fonts (SIL Open Font License). Lora + Lato served locally so
+   the site works fully offline / on filtered Chromebooks, no Google request.
+   ========================================================================== */
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/lato-400.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/lato-700.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 900; font-display: swap; src: url('../fonts/lato-900.woff2') format('woff2'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/lora-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/lora-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/lora-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/lora-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lora'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/lora-italic-400.woff2') format('woff2'); }
+
 :root {
   /* Warm teal palette (not cold blue) */
   --primary:        #0F5257;   /* deep teal — primary actions */
@@ -73,6 +86,12 @@ a { color: var(--primary); text-decoration: none; }
 a:hover { text-decoration: underline; }
 strong { font-weight: 700; }
 em { font-family: var(--font-head); }
+
+/* Visible focus ring for keyboard users */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px;
+}
 
 /* Headings — serif for warmth */
 h1, h2, h3, .brand-text, .eyebrow, .tool-name { font-family: var(--font-head); }
@@ -356,8 +375,12 @@ h3 { font-size: var(--fs-h3); margin: 24px 0 10px; }
   font-family: var(--font-body);
 }
 .acc-head:hover { background: var(--teal-soft); }
-.acc-head .arrow { transition: transform .18s; color: var(--accent); flex: none; }
-.acc-item.open .acc-head .arrow { transform: rotate(90deg); }
+.acc-head .arrow {
+  flex: none; width: 9px; height: 9px; margin-right: 4px;
+  border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent);
+  transform: rotate(-45deg); transition: transform .18s;
+}
+.acc-item.open .acc-head .arrow { transform: rotate(45deg); }
 .acc-body { display: none; padding: 4px 18px 18px; }
 .acc-item.open .acc-body { display: block; }
 .acc-body p { margin-bottom: 10px; color: var(--ink-soft); }

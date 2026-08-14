@@ -1,0 +1,11 @@
+{
+  "name": "ai-pd-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI in Education professional learning hub (static site, built to dist/ and deployed via GitHub Actions)",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch"
+  },
+  "license": "UNLICENSED"
+}

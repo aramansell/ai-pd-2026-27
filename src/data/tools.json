@@ -1,0 +1,385 @@
+{
+  "ppsApproved": [
+    {
+      "tool": "Gemini (Google)",
+      "desc": "Google's assistant, connected to Workspace (Docs, Gmail, Slides). PPS encourages staff to use Gemini with district accounts, enterprise-grade security, no training on your data.",
+      "goodFor": "Planning, drafting, summarizing, brainstorming inside Google.",
+      "studentData": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "with district account"
+      },
+      "cost": {
+        "tag": "freemium",
+        "label": "Free + paid"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Adobe Express",
+      "desc": "Design tool with generative AI, flyers, graphics, social posts, presentations.",
+      "goodFor": "Quick visual content; AI image/text effects.",
+      "studentData": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "with district account"
+      },
+      "cost": {
+        "tag": "freemium",
+        "label": "Free + paid"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Canva (for Education)",
+      "desc": "Design tool with AI (Magic Studio), posters, slides, student projects.",
+      "goodFor": "Student projects, presentations, visual lessons.",
+      "studentData": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "with edu account"
+      },
+      "cost": {
+        "tag": "free",
+        "label": "Free for educators*"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Kami",
+      "desc": "PDF / document annotation with AI, marking up docs, worksheets, feedback.",
+      "goodFor": "Digital annotation, differentiated worksheets, feedback on documents.",
+      "studentData": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "with district account"
+      },
+      "cost": {
+        "tag": "freemium",
+        "label": "Free + paid"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Screencastify",
+      "desc": "Screen recording / video with AI, record lessons, add captions, quizzes.",
+      "goodFor": "Flipped content, explainer videos, student video responses.",
+      "studentData": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "with district account"
+      },
+      "cost": {
+        "tag": "freemium",
+        "label": "Free + paid"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": ""
+      }
+    }
+  ],
+  "other": [
+    {
+      "tool": "NotebookLM (Google)",
+      "desc": "Grounded AI workspace, upload sources, get answers and summaries only from what you uploaded.",
+      "goodFor": "Zero-hallucination research and study guides from your own materials.",
+      "cost": {
+        "tag": "free",
+        "label": "Free"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "Ollama (local)",
+      "desc": "Runs open-source AI models on your own device. No cloud, no account.",
+      "goodFor": "Complete privacy; learning how AI works; simple tasks offline.",
+      "cost": {
+        "tag": "free",
+        "label": "Free"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "Diffit",
+      "desc": "Differentiates any text to multiple reading levels and standards.",
+      "goodFor": "Adapting reading material for varied levels &amp; EL students.",
+      "cost": {
+        "tag": "freemium",
+        "label": "Free + paid"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "SchoolAI",
+      "desc": "\"Spaces\" where students work with AI under teacher control.",
+      "goodFor": "Structured, monitored student AI activities.",
+      "cost": {
+        "tag": "freemium",
+        "label": "Free trial + paid"
+      },
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "Claude (Anthropic)",
+      "desc": "Anthropic's assistant, known for thoughtful writing and strong analysis of long documents (large context window, extended thinking).",
+      "goodFor": "Drafting and editing nuanced prose; analyzing long documents and PDFs; careful lesson planning; code and data work.",
+      "cost": {
+        "tag": "freemium",
+        "label": "Free + paid"
+      },
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Claude for Education (Anthropic)",
+      "desc": "Anthropic's dedicated institutional plan for a school's students, faculty, and staff.",
+      "goodFor": "Discounted access for all school members; academic research &amp; learning mode with dedicated API credits; training and enablement.",
+      "cost": {
+        "tag": "paid",
+        "label": "Institutional"
+      },
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "ChatGPT for teachers (OpenAI)",
+      "desc": "Teacher-specific ChatGPT offering from OpenAI.",
+      "goodFor": "Planning, feedback, and general tasks if approved.",
+      "cost": {
+        "tag": "paid",
+        "label": "Paid"
+      },
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Microsoft Copilot / M365",
+      "desc": "AI assistant inside Microsoft 365 apps.",
+      "goodFor": "Drafting in Word/Outlook/Teams if your M365 plan includes it.",
+      "cost": {
+        "tag": "freemium",
+        "label": "Varies"
+      },
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    }
+  ],
+  "plans": [
+    {
+      "tool": "Gemini (Google)",
+      "free": "Free consumer tier",
+      "school": "Google Workspace for Education (district account)",
+      "paid": "Google AI Plus ~$10/mo, Pro ~$20/mo",
+      "safe": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "with district Workspace account"
+      },
+      "notes": "PPS encourages staff to use Gemini with district accounts, no training on your data.",
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "Canva (for Education)",
+      "free": "Free (limited)",
+      "school": "Canva for Education (free for verified educators)",
+      "paid": "Canva Pro (paid)",
+      "safe": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "(edu)"
+      },
+      "notes": "Design + AI (Magic Studio). Listed on PPS approved staff tools.",
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Diffit",
+      "free": "Basic (free, 90-day history)",
+      "school": "Diffit for Schools (quote)",
+      "paid": "$14.99/mo or $149.99/yr",
+      "safe": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "(edu)"
+      },
+      "notes": "Differentiates reading levels.",
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "SchoolAI",
+      "free": "Free trial (5 Spaces/yr)",
+      "school": "Pro / Scale (districts, custom)",
+      "paid": "Pro, Scale (quote)",
+      "safe": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "(edu)"
+      },
+      "notes": "Monitored student \"Spaces\".",
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "Ollama (local)",
+      "free": "Free, open source",
+      "school": "Runs on school devices",
+      "paid": "Pro $20/mo or $200/yr (cloud)",
+      "safe": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "(stays on device)"
+      },
+      "notes": "Most private option, data never leaves the machine.",
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "NotebookLM (Google)",
+      "free": "Free",
+      "school": "Works with your PPS Google account",
+      "paid": "Not offered",
+      "safe": {
+        "tag": "priv-safe",
+        "label": "Safe",
+        "suffix": "grounded in your sources"
+      },
+      "notes": "Answers only from documents you upload, low hallucination risk.",
+      "district": {
+        "tag": "appr-approved",
+        "label": "Approved",
+        "suffix": "for teacher use"
+      }
+    },
+    {
+      "tool": "Claude (Anthropic)",
+      "free": "Free tier ($0)",
+      "school": "Claude for Education / institutional (discounted, under review)",
+      "paid": "Pro $17/mo (annual) or $20/mo; Max from $100/mo; Team $20/seat/mo (annual)",
+      "safe": {
+        "tag": "priv-caution",
+        "label": "Caution",
+        "suffix": "only if approved"
+      },
+      "notes": "Free: chat, web search, memory, code. Pro adds Claude Code/Cowork/Design/Science + Research. \"No model training on your content by default\" on Team/Enterprise.",
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Claude for Education",
+      "free": "Not offered",
+      "school": "Institutional plan (students, faculty, staff)",
+      "paid": "Discounted institutional pricing",
+      "safe": {
+        "tag": "priv-caution",
+        "label": "Caution",
+        "suffix": "only if approved"
+      },
+      "notes": "Academic research &amp; learning mode; dedicated API credits; training &amp; enablement for adoption.",
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "ChatGPT for teachers (OpenAI)",
+      "free": "Not offered",
+      "school": "ChatGPT for Education (under review)",
+      "paid": "Plus, Team (paid)",
+      "safe": {
+        "tag": "priv-caution",
+        "label": "Caution",
+        "suffix": "only if approved"
+      },
+      "notes": "Teacher-specific offering from OpenAI.",
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    },
+    {
+      "tool": "Microsoft Copilot / M365",
+      "free": "Copilot Chat free with school account",
+      "school": "M365 A1 → A3/A5; Copilot in Education",
+      "paid": "Copilot Pro ~$20/mo",
+      "safe": {
+        "tag": "priv-caution",
+        "label": "Caution",
+        "suffix": "only if approved"
+      },
+      "notes": "Check with IT whether your M365 plan includes it.",
+      "district": {
+        "tag": "appr-pending",
+        "label": "Under review",
+        "suffix": ""
+      }
+    }
+  ]
+}
